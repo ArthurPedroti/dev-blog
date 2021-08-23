@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Arthur Pedroti Blog`,
-    description: `Um blog sobre programação em geral`,
+    position: 'Coordenador de TI',
+    description: `Coordenador de TI da AGF Equipamentos, escrevo sobre o mundo da programção e gestão.`,
     author: `@arthurpedroti`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
