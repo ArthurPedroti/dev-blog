@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Arthur Pedroti Blog`,
+    title: `Arthur Pedroti`,
     position: 'Coordenador de TI',
     description: `Coordenador de TI da AGF Equipamentos, escrevo sobre o mundo da programção e gestão.`,
     author: `@arthurpedroti`,
