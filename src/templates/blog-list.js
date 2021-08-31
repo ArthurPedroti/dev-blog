@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import PostItem from '../components/PostItem'
 import Seo from '../components/seo'
+import PostItem from '../components/PostItem'
 import Pagination from '../components/Pagination'
 
 const BlogList = (props) => {
