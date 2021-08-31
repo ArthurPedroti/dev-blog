@@ -5,9 +5,11 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "dracula-prism": "^2.1.4",
     "gatsby": "^3.11.1",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-algolia-search": "^0.5.7",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-manifest": "^3.11.0",
