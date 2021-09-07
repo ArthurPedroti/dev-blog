@@ -8,7 +8,7 @@ module.exports = {
     position: 'Coordenador de TI',
     description: `Coordenador de TI da AGF Equipamentos, escrevo sobre o mundo da programção e gestão.`,
     author: `@arthurpedroti`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`
+    siteUrl: `https://dev.arthurpedroti.com.br/`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -74,18 +74,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Arthur Pedroti Dev Blog`,
+        short_name: `ATP Dev`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`
       }
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }
