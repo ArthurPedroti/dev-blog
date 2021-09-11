@@ -9,7 +9,7 @@ export const ProfileWrapper = styled.section`
 `
 
 export const ProfileLink = styled(AniLink)`
-  color: var(--texts);
+  color: var(--frost-cian);
   text-decoration: none;
   transition: color 0.5s;
 
@@ -37,6 +37,7 @@ export const ProfilePosition = styled.small`
   display: block;
   font-size: 1.2rem;
   font-weight: 300;
+  color: var(--blue);
 
   ${media.lessThan('large')`
     font-size: 0.8rem;
@@ -48,6 +49,7 @@ export const ProfileDescription = styled.p`
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.4;
+  color: var(--blue);
 
   ${media.lessThan('large')`
     display: none;
