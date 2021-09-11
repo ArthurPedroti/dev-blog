@@ -7,7 +7,7 @@
   "dependencies": {
     "algoliasearch": "^4.10.5",
     "dotenv": "^10.0.0",
-    "dracula-prism": "^2.1.4",
+    "dracula-prism": "^1.2.1",
     "gatsby": "^3.11.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-algolia-search": "0.5.7",

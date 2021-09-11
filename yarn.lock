@@ -6114,10 +6114,12 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
-dracula-prism@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/dracula-prism/-/dracula-prism-2.1.4.tgz#744b77c7d8b4ce9a7bba2d370e83494267df3759"
-  integrity sha512-vQ68dsqQCIjpSuqVrOHfBKxErXP7wNX+fDoFOZkWCE26fDC5AnuirM89v5DE/nmetinGxYu0ZZLg3ESvbZh1OA==
+dracula-prism@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/dracula-prism/-/dracula-prism-1.2.1.tgz#6c4362478a2e9df9ec941af37e315c76b3dbcf79"
+  integrity sha512-f4hAWpAbLxDIac/fbKr7/1FRwjEV58EYCsDrrdmOY0CosAlMMPVNdsRvYJdgLGSkesvoH6NfneqsFzLU4FJxvw==
+  dependencies:
+    prismjs "^1.19.0"
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -13216,7 +13218,7 @@ pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-prismjs@^1.24.1:
+prismjs@^1.19.0, prismjs@^1.24.1:
   version "1.24.1"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
   integrity sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==

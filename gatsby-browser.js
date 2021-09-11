@@ -1,2 +1,2 @@
 import 'lazysizes'
-require('dracula-prism/dist/css/dracula-prism.css');
+require('dracula-prism/css/dracula-prism.css');
