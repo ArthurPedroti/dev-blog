@@ -47,7 +47,7 @@ export const MenuBarLink = styled(AniLink)`
 `
 
 export const MenuBarItem = styled.span`
-  color: var(--orange);
+  color: var(--frost-green);
   cursor: pointer;
   display: block;
   height: 3.75rem;
@@ -64,7 +64,7 @@ export const MenuBarItem = styled.span`
   }
 
   &:hover {
-    color: var(--frost-green);
+    color: var(--orange);
   }
 
   &.display {
@@ -74,7 +74,7 @@ export const MenuBarItem = styled.span`
   }
   ${media.greaterThan('large')`
     &:hover {
-      color: var(--frost-green);
+      color: var(--orange);
     }
   `}
   ${media.lessThan('large')`
