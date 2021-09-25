@@ -2,7 +2,7 @@
 title: Criando containers e bancos de dados no Docker
 description: Entenda os princípios básicos do Docker, e como criar seu primeiro container
 date: 2021-09-10 09:37:36
-image: https://dclogisticsbrasil.com/wp-content/uploads/2018/11/container-qual-usar.jpg
+image: assets/img/containers.jpg
 category: jekyll
 background: "#B31917"
 ---
