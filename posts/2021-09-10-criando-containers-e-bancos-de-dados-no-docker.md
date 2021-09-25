@@ -2,7 +2,7 @@
 title: Criando containers e bancos de dados no Docker
 description: Entenda os princípios básicos do Docker, e como criar seu primeiro container
 date: 2021-09-10 09:37:36
-thumbnail: https://dclogisticsbrasil.com/wp-content/uploads/2018/11/container-qual-usar.jpg
+image: https://dclogisticsbrasil.com/wp-content/uploads/2018/11/container-qual-usar.jpg
 category: jekyll
 background: "#B31917"
 ---
@@ -116,7 +116,7 @@ Dependendo do que você for fazer no banco, talvez você precise acessar o banco
 
 ## Concluindo
 
-O Docker pode parecer um pouco complexo no começo, e talvez você irá precisar consultar algumas vezes a documentação, dependendo do que você deseja fazer, porem, ele é uma ferramenta poderosa, que nos permite criar ambientes totalmente funcionais em poucos segundos. 
+O Docker pode parecer um pouco complexo no começo, e talvez você irá precisar consultar algumas vezes a documentação, dependendo do que você deseja fazer, porem, ele é uma ferramenta poderosa, que nos permite criar ambientes totalmente funcionais em poucos segundos.
 
 Lembrando, não deixe de olhar a documentação! Aqui só falamos de um pouquinho do poder do Docker, cabe a você estudar e se aprofundar no assunto, seguem os links para consultas:
 
