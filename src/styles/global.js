@@ -83,13 +83,22 @@ const GlobalStyles = createGlobalStyle`
   }
   body.light {
     --borders: #dedede;
-    --postColor: #111;
+    --postColor: #2E3440;
     --texts: #555555;
     --highlight: #1fa1f2;
     --mediumBackground: #f0f0f3;
     --background: #fff;
     --white: #fff;
     --black: #222;
+    --red: #2E3440;
+    --orange: #D08770;
+    --yellow: #EBCB8B;
+    --green: #A3BE8C;
+    --purple: #B48EAD;
+    --blue: #2E3440;
+    --frost-green: #5E81AC;
+    --frost-cian: #5E81AC;
+    --frost-blue: #5E81AC;
   }
 `
 export default GlobalStyles

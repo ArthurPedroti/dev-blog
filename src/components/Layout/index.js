@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { TransitionPortal } from 'gatsby-plugin-transition-link'
+import Particles from '../Particles'
 
 import * as S from './styles'
 import GlobalStyles from '../../styles/global'
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
       </S.LayoutMain>
       <TransitionPortal level="top">
         <MenuBar />
+        <Particles />
       </TransitionPortal>
     </S.LayoutWrapper>
   )

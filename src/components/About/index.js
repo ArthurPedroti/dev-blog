@@ -12,19 +12,20 @@ const About = () => (
         Com 20 anos comecei a trabalhar no setor de engenharia, passei por
         cargos de PCP, logística, materiais, almoxarifado, importação e
         exportação, e no meio disso tudo, também assumi as responsabilidades de
-        TI, e comecei a ter contato com o desenvolvimento de projetos, e
-        programação na empresa em que trabalho.
+        TI, e comecei a ter contato com o desenvolvimento de projetos e
+        programação, na empresa em que trabalho.
       </p>
       <p>
         Com isso, me tornei autodidata e me apaixonei pelo mundo da tecnologia e
-        do desenvolvimento, pela comunidade Open Source e pelo tanto de inovação
-        e evolução continua que envolve o mundo da tecnologia.
+        do desenvolvimento, pela comunidade Open Source, e pelo tanto de
+        inovação e evolução continua, que envolve o mundo da tecnologia.
       </p>
       <p>
         Agora estou totalmente focado em liderar e atuar nos projetos de
-        desenvolvimento da empresa em que atuo atualmente. Me vejo aprimorando
-        cada vez mais meus conhecimentos técnicos e pronto para conseguir
-        impactar cada vez mais vidas e rotinas utilizando a programação!
+        desenvolvimento da empresa em que atuo. Me vejo aprimorando cada vez
+        mais meus conhecimentos técnicos, de liderança e gestão, e pronto para
+        conseguir impactar cada vez mais vidas utilizando a tecnologia e
+        programação.
       </p>
       <h4>Habilidades Técnicas:</h4>
       <ul>
@@ -70,11 +71,11 @@ const About = () => (
       </ul>
       <h4>Aliados a algumas qualidades pessoais:</h4>
       <ul>
-        <li>Aprendizado rápido</li>
-        <li>Experiência em receber e dar feedbacks</li>
-        <li>Boa organização e gerenciamento</li>
-        <li>Ser um bom ouvinte</li>
         <li>Autodidata</li>
+        <li>Experiência em receber e dar feedbacks</li>
+        <li>Organização e processos</li>
+        <li>Gerenciamento e liderança</li>
+        <li>Ser um bom ouvinte</li>
       </ul>
     </S.MainContent>
   </>
