@@ -6,8 +6,8 @@ import * as S from './styles'
 function handleQuantityOfParticles() {
   const windowGlobal = typeof window !== 'undefined' && window
 
-  if (windowGlobal.innerWidth < 500) {
-    return 10
+  if (windowGlobal.innerWidth < 1500) {
+    return 25
   }
 
   return 50
