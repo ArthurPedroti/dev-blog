@@ -87,6 +87,22 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GATSBY_GOOGLE_TAG_MANAGER,
+        includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://www.google-analytics.com",
+          "https://www.googletagmanager.com",
+        ],
+      },
+    },
     `gatsby-plugin-netlify-cms`
   ]
 }

@@ -1447,7 +1447,7 @@
     core-js-pure "^3.16.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.15.4", "@babel/runtime@^7.2.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.15.4", "@babel/runtime@^7.2.0", "@babel/runtime@^7.4.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
   version "7.15.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
   integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
@@ -7565,13 +7565,12 @@ gatsby-plugin-gatsby-cloud@^2.11.0:
     lodash "^4.17.21"
     webpack-assets-manifest "^5.0.6"
 
-gatsby-plugin-google-analytics@^3.14.0:
+gatsby-plugin-google-tagmanager@^3.14.0:
   version "3.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.14.0.tgz#9a65c9b2b0ad0a2350c0318327101f637e285ef0"
-  integrity sha512-yfSBRrGZZWruKDQMAJOHp7S1nUBQewT9MuvqegCqFsHhxUtm6PZ5JFv3k8385DfQ/+ux9MmzpY20vQ0E5/30fA==
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-3.14.0.tgz#c3094272aeeccda4c88b87b0f6749c8f8b1fe564"
+  integrity sha512-rASL5Y9HRXMxcNg3oJRbbfqJLO8CyrYPjQRleiAsE7iBK51uiPGMUVcj6HNqHtniqM9q7YkzX6E42fGUA8GDLQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    minimatch "3.0.4"
     web-vitals "^1.1.2"
 
 gatsby-plugin-image@^1.14.0:
@@ -7646,6 +7645,13 @@ gatsby-plugin-page-creator@^3.12.0:
     gatsby-telemetry "^2.12.0"
     globby "^11.0.4"
     lodash "^4.17.21"
+
+gatsby-plugin-preconnect@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.2.1.tgz#d12aacad7bf91c4024af84c52c3be0783217da54"
+  integrity sha512-8gEjLdaa3kOFEOvY23YcdKW8PGAu2SHffJkG1tCiTkkTR5r6oGawqfbvRI48H4UHZdR1vgOv0iPkB7OSRG2hZg==
+  dependencies:
+    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-react-helmet@^4.11.0:
   version "4.12.0"
