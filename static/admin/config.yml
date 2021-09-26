@@ -26,14 +26,14 @@ collections:
         label: "Category",
         name: "category",
         widget: "select",
-        options: ["jekyll", "css", "js", "html", "svg", "dev", "misc"]
+        options: ["docker", "css", "js", "html", "svg", "dev", "misc"]
       }
       - {
         label: "Background",
         name: "background",
         widget: "select",
         options: [
-          { label: "Jekyll", value: "#B31917" },
+          { label: "docker", value: "#007bff" },
           { label: 'CSS', value: '#2DA0C3' },
           { label: 'JS', value: '#D6BA32' },
           { label: 'HTML', value: '#EB7728' },
