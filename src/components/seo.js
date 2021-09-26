@@ -85,9 +85,9 @@ function Seo({ description, lang, meta, title, image }) {
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `pt-BR`,
   meta: [],
-  description: ``
+  description: `Arthur Pedroti Blog`
 }
 
 Seo.propTypes = {
