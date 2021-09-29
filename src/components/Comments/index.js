@@ -8,7 +8,7 @@ const Comments = ({ url, title }) => {
   const completeURL = `https://dev.arthurpedroti.com.br${url}`
 
   return (
-    <S.Wrapper>
+    <S.CommentsWrapper>
       <S.CommentsTitle>Comentários</S.CommentsTitle>
       <ReactDisqusComments
         shortname="arthurpedroti"
@@ -16,7 +16,7 @@ const Comments = ({ url, title }) => {
         title={title}
         url={completeURL}
       />
-    </S.Wrapper>
+    </S.CommentsWrapper>
   )
 }
 

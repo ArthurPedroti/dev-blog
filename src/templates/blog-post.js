@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
 import RecommendedPosts from '../components/RecommendedPosts'
+import UtterancesComments from '../components/UtterancesComments'
+import { appendComments } from '../utils/appendComments'
 
 import * as S from '../components/Post/styles'
 // import Comments from '../components/Comments'
@@ -12,6 +14,11 @@ const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const next = pageContext.nextPost
   const previous = pageContext.previousPost
+  const commentBox = React.createRef()
+
+  useEffect(() => {
+    appendComments(commentBox)
+  }, [])
 
   return (
     <Layout>
@@ -31,6 +38,8 @@ const BlogPost = ({ data, pageContext }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
       <RecommendedPosts next={next} previous={previous} />
+      <UtterancesComments commentBox={commentBox} />
+
       {/* <Comments url={post.fields.slug} title={post.frontmatter.title} /> */}
     </Layout>
   )
