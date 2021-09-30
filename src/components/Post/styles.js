@@ -136,7 +136,7 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.069rem;
     line-height: 1.4;
   }
@@ -165,7 +165,8 @@ export const MainContent = styled.section`
     font-size: 1.2rem;
   }
   strong {
-    font-weight: 700;
+    font-weight: 600;
+    color: var(--highlight);
   }
   .gatsby-resp-image-background-image {
     z-index: 2;
