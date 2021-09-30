@@ -33,7 +33,7 @@ Pra instalarmos o Strapi, precisamos já ter criado um banco de dados, para que 
 
 Atualmente o Strapi suporta os seguintes bancos:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a36ed6d7-a666-411e-a327-682b66828397/Untitled.png)
+![Bancos de dados do Strapi](assets/img/bancos-de-dados-strapi.png "Bancos de dados do Strapi")
 
 Mas isso pode mudar, então é sempre bom olhar a documentações para ter certeza.
 
@@ -91,7 +91,7 @@ Agora basta acessar: <http://localhost:1337/admin> (se já não tiver aberto aut
 
 Na primeira vez que rodamos o Strapi, ele vai pedir para cadastrarmos o usuário que será o admnistrador.
 
-![Bancos de dados do Strapi](assets/img/pastas-strapi.png "Bancos de dados do Strapi")
+![Formulário de cadastro do usuário administrador](assets/img/login-strapi.png "Formulário de cadastro do usuário administrador")
 
 E pronto, já estamos na tela inicial do Strapi!
 
@@ -133,7 +133,7 @@ Algo bem simples mesmo, só para vermos como funciona.
 
 Agora não esqueça de clicar em "Save", para que o Strapi realmente crie tudo que você inseriu.
 
-![Indicação de onde fica o "save" para criação do collection type](assets/img/save-strapi.png "Indicação de onde fica o \"save\" para criação do collection type")
+![Indicação de onde fica o "save" para criação do collection type](assets/img/save-strapi.png "Indicação de onde fica o \\"save\\" para criação do collection type")
 
 Quando você criar uma collection ou single type, você pode ir até a pasta "api" do seu projeto, e lá você verá toda a configuração que você fez ali pela interface, no formato de código.
 
