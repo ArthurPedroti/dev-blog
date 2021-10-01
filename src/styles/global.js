@@ -100,5 +100,18 @@ const GlobalStyles = createGlobalStyle`
     --frost-cian: #5E81AC;
     --frost-blue: #5E81AC;
   }
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #2E3440;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #81A1C1;
+    border-radius: 0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D8DEE9;
+  }
 `
 export default GlobalStyles
