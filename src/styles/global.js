@@ -102,16 +102,16 @@ const GlobalStyles = createGlobalStyle`
   }
   /* Scrollbar */
   ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  background: #2E3440;
+    width: 8px;
+    height: 8px;
+    background: var(--background);
   }
   ::-webkit-scrollbar-thumb {
-    background: #81A1C1;
+    background: var(--frost-blue);
     border-radius: 0;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #D8DEE9;
+    background: var(--texts);
   }
 `
 export default GlobalStyles
