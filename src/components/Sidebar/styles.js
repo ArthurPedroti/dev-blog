@@ -14,6 +14,7 @@ export const Wrapper = styled.aside`
   width: 20rem;
 
   ${media.lessThan('large')`
+    border-right: 0;
     align-items: flex-start;
     height: auto;
     padding: 1rem 2rem;

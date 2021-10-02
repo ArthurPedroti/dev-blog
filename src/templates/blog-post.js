@@ -8,6 +8,7 @@ import UtterancesComments from '../components/UtterancesComments'
 import { appendComments } from '../utils/appendComments'
 
 import * as S from '../components/Post/styles'
+import NewsletterForm from '../components/NewsletterForm'
 // import Comments from '../components/Comments'
 
 const BlogPost = ({ data, pageContext }) => {
@@ -37,9 +38,9 @@ const BlogPost = ({ data, pageContext }) => {
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
+      <NewsletterForm />
       <RecommendedPosts next={next} previous={previous} />
       <UtterancesComments commentBox={commentBox} />
-
       {/* <Comments url={post.fields.slug} title={post.frontmatter.title} /> */}
     </Layout>
   )

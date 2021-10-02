@@ -59,7 +59,7 @@ export const MenuBarItem = styled.span`
     color: var(--yellow);
 
     &:hover {
-      color: var(--yellow);
+      color: var(--orange);
     }
   }
 
