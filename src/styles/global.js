@@ -95,23 +95,23 @@ const GlobalStyles = createGlobalStyle`
     --yellow: #EBCB8B;
     --green: #A3BE8C;
     --purple: #B48EAD;
-    --blue: #2E3440;
+    --blue: #5E81AC;
     --frost-green: #5E81AC;
     --frost-cian: #5E81AC;
-    --frost-blue: #5E81AC;
+    --frost-blue: #81A1C1;
   }
   /* Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background: var(--background);
+    background: var(--borders);
   }
   ::-webkit-scrollbar-thumb {
     background: var(--frost-blue);
     border-radius: 0;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--texts);
+    background: var(--blue);
   }
 `
 export default GlobalStyles
