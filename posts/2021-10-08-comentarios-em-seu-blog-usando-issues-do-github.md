@@ -25,7 +25,7 @@ Basicamente vocês tem que verificar as seguintes configurações:
 
 * Se certificar que seu repositório é público (você pode criar um novo repositório só para os comentários também!)
 * Instalar o [utterances app](https://github.com/apps/utterances) no seu repositório.
-* Se seu repositório for um fork, se certifique que ele possui essa configuração:
+* Se seu repositório for um fork, se certifique que ele possui esta configuração:
 
 ![Configuração necessária em repositórios forks](assets/img/config.png "Configuração necessária em repositórios forks")
 
