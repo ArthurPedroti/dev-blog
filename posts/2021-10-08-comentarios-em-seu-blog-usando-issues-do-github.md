@@ -1,7 +1,7 @@
 ---
 title: Comentários em seu blog usando issues do Github?
-description: Sim, isso mesmo! Nesse post quero mostrar como pode usar as issues
-  do Github para incluir uma área de comentários no seu blog!
+description: Sim, isso mesmo! Nesse post quero mostrar para você como usar as
+  issues do Github para incluir uma área de comentários no seu blog!
 date: 2021-10-08 02:41:11
 image: assets/img/comments.png
 category: js
