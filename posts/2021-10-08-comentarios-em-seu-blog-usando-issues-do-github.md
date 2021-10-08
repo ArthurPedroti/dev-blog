@@ -70,18 +70,18 @@ const UtterancesComments = ({ commentBox }) => {
 export default UtterancesComments
 ```
 
-Depois eu criei uma função separada, que também receberia um **commentBox** com o mesmo ref que eu passei para o componente React, e criaria em cima desse "ref", um elemento **script** e adicionaria a ele todos os **atributos** que o script do utterances precisa para funcionar:
+Depois eu criei uma função separada, que também receberia um **commentBox**, com o mesmo ref que eu passei para o componente React, e criaria em cima desse "ref", um elemento **script** e adicionaria a ele todos os **atributos** que o script do utterances precisa para funcionar:
 
 ```jsx
 export function appendComments(commentBox) {
 	const commentScript = document.createElement('script')
   
 	commentScript.async = true
-  commentScript.src = 'https://utteranc.es/client.js'
-  commentScript.setAttribute('repo', 'ArthurPedroti/comments')
-  commentScript.setAttribute('issue-term', 'pathname')
-  commentScript.setAttribute('theme', 'photon-dark')
-  commentScript.setAttribute('crossorigin', 'anonymous')
+    commentScript.src = 'https://utteranc.es/client.js'
+    commentScript.setAttribute('repo', 'ArthurPedroti/comments')
+    commentScript.setAttribute('issue-term', 'pathname')
+    commentScript.setAttribute('theme', 'photon-dark')
+    commentScript.setAttribute('crossorigin', 'anonymous')
 
   if (commentBox && commentBox.current) {
     commentBox.current.appendChild(commentScript)
@@ -125,7 +125,7 @@ E este é o resultado:
 
 ## Conclusão
 
-Essa pequena ferramenta é simplesmente fenomenal, e pode colocar comentários no seu blog de uma maneira extremamente simples e prática, você não vai depender de bancos de dados, de backend, ou de serviços de terceiros, que precisam de manutenção. Então, se seu projeto é **simples**, e você precisa de uma maneira **simples** adicionar um ambiente em que as pessoas possam comentar, o utterances é uma ótima opção!
+Essa pequena ferramenta é simplesmente fenomenal, e pode colocar comentários no seu blog de uma maneira extremamente simples e prática, você não vai depender de bancos de dados, de backend, ou de serviços de terceiros, que precisam de manutenção. Então, se seu projeto é **simples**, e você precisa de uma maneira **simples**, adicionar um ambiente em que as pessoas possam comentar, o utterances é uma ótima opção!
 
 Espero que você tenha gostado dessa pequena sugestão, para mais informações sobre, vou deixar aqui o link oficial do utterances:
 
@@ -134,3 +134,5 @@ Espero que você tenha gostado dessa pequena sugestão, para mais informações 
 E se você também quiser ver na prática, como eu adicionei ao meu blog, você pode dar uma olhada direto no meu repositório:
 
 [GitHub - ArthurPedroti/dev-blog](https://github.com/ArthurPedroti/dev-blog)
+
+E se quiser testar o utterances, comenta aqui em baixo😉👇
