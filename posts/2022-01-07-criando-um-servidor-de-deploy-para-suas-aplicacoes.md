@@ -34,7 +34,7 @@ Então, para o nosso exemplo, vamos utilizar o Node.js para construir o serviço
 
 ## Servidor da aplicação
 
-Como utilizaremos o Node.js nesse exemplo, o primeiro passo é estar instalando ele no seu servidor, neste exemplo, vamos estar utilizando como servidor o Ubuntu Server 20.04. Se você quiser testar essa abordagem de um modo fácil, você pode instalar um container do Ubuntu, seguindo este outro post: 
+Como utilizaremos o Node.js nesse exemplo, o primeiro passo é estar instalando ele no seu servidor, neste exemplo, vamos estar utilizando como servidor o Ubuntu Server 20.04. Se você quiser testar essa abordagem de um modo fácil, você pode instalar um container do Ubuntu, seguindo este outro post: [Criando um servidor Ubuntu no Docker | Arthur Pedroti](https://dev.arthurpedroti.com.br/criando-um-servidor-ubuntu-no-docker/)
 
 Para instalar o node, execute os seguintes comandos:
 
