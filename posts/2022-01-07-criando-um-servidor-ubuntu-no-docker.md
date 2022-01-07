@@ -43,7 +43,7 @@ Se você deseja acessar esse container para fazer determinados testes, é aconse
 
 Para expor uma porta, basta apenas utilizar a opção “-p”, seguido da porta que vai ser usada pelo host, e depois a porta que será usada pelo container:
 
-```jsx
+```bash
 docker run --name ubuntu -p 3333:3333 -it ubuntu
 ```
 
@@ -53,7 +53,7 @@ Docs: [Container networking | Docker Documentation](https://docs.docker.com/conf
 
 ### Problemas de conexão
 
-Mesmo expondo a porta do seu container, pode ser que você enfrente algumas dores de cabeça com a conexão, eu mesmo tive alguns problemas, mas o mais complicado e que eu demorei para resolver, foi o de eu expor uma porta do container, por uma aplicação para rodar, e mesmo assim, quando eu tentava acessar o container, dava um erro de resposta como “ERR_EMPTY_RESPONSE**”**, ou “Empty reply from server”.
+Mesmo expondo a porta do seu container, pode ser que você enfrente algumas dores de cabeça com a conexão, eu mesmo tive alguns problemas, mas o mais complicado e que eu demorei para resolver, foi o de eu expor uma porta do container, colocar uma aplicação para rodar, e mesmo assim, quando eu tentava acessar o container, dava um erro de resposta como “ERR_EMPTY_RESPONSE”, ou “Empty reply from server”.
 
 Esse erro especificamente, ocorre devido ao hostname configurado na sua aplicação, no meu caso, estava utilizando e definindo “localhost” como hostname, e só funcionou quando eu alterei para “0.0.0.0”.
 
@@ -63,7 +63,7 @@ Link que me ajudou a resolver: [node.js - Docker: Empty response from server - S
 
 Algumas vezes, mesmo você logando no shell pelo usuário root, alguns comandos podem acusar que não tem permissão para serem executados por que o usuário não é o root(mesmo você sendo o root rs), nesse caso você pode usar uma a opção “—privileged”, que estende alguns privilégios ao acesso, e evita esses erros.
 
-```jsx
+```bash
 docker exec -it --privileged ubuntu bash
 ```
 
