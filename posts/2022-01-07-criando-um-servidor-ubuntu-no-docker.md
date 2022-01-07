@@ -21,7 +21,7 @@ No [Docker Hub](https://hub.docker.com/) você encontra todas as imagens dispon�
 
 Existem algumas “tags” que são colocadas na linha de comando na criação do container, para sinalizar qual o tipo do ubuntu que você quer criar. A tag pode ser a própria versão “18.04”, ou o nome da versão: “bionic”. A tag padrão é a “latest”, que baixa a última versão LTS do ubuntu.
 
-Como no meu caso, eu gostaria de usar a linha de comando para testar as primeiras configurações, eu descobri que também preciso usar uma opção chamada de **pseudo-TTY**(-it), que cria um terminal interativo para você executar os comandos pelo bash (o shell do Ubuntu).
+Como no meu caso, eu gostaria de usar a linha de comando para testar as primeiras configurações, eu descobri que também preciso usar uma opção chamada de **pseudo-TTY** (-it), que cria um terminal interativo para você executar os comandos pelo bash (o shell do Ubuntu).
 
 E por fim usei a opção “—name” para nomear o container. Ficando da seguinte forma:
 
