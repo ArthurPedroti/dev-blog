@@ -2,7 +2,7 @@
 title: Criando um servidor de deploy para suas aplicações
 description: Como criar um servidor simples e eficiente para rodar suas
   aplicações em produção
-date: 2022-01-07 02:58:41
+date: 2022-01-13 03:59:55
 image: assets/img/deploy.png
 category: dev
 background: "#637a91"
