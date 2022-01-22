@@ -89,10 +89,7 @@ Agora vamos testar, criando um novo script no nosso package.json:
 "generate": "yarn plop --plopfile ./generators/plopfile.js"
 ```
 
-<aside>
-💡 O caminho padrão do plopfile.js é a raiz do projeto, porém você pode passar a flag "—plopfile" e especificar onde se encontra o seu arquivo plopfile.js
-
-</aside>
+O caminho padrão do plopfile.js é a raiz do projeto, porém você pode passar a flag "—plopfile" e especificar onde se encontra o seu arquivo plopfile.js
 
 E rodar o script:
 
