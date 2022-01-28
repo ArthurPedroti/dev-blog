@@ -101,7 +101,7 @@ pm2 start --interpreter=node@12.22.7 hello.js
 Ou usando o caminho completo:
 
 ```jsx
-pm2 start --interpreter=/home/user/.nvm/v0.10.28/bin/node hello.js
+pm2 start --interpreter=/home/user/.nvm/v12.22.7/bin/node hello.js
 ```
 
 Você também pode criar um arquivo de configurações do pm2, para manter um comando padrão de inicialização do pm2:
