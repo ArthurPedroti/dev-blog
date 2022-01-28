@@ -26,7 +26,7 @@ collections:
         label: "Category",
         name: "category",
         widget: "select",
-        options: ["docker", "css", "js", "html", "svg", "dev", "misc", "devops", "gestão"]
+        options: ["docker", "css", "js", "html", "svg", "dev", "misc", "devops", "gestão", "node"]
       }
       - {
         label: "Background",
@@ -42,6 +42,7 @@ collections:
           { label: 'Misc', value: '#7AAB13' },
           { label: 'DevOps', value: '#00563f' },
           { label: 'Gestão', value: '#003153' },
+          { label: 'Node', value: '#7AAB13' },
         ]
       }
       - {label: "Body", name: "body", widget: "markdown"}
