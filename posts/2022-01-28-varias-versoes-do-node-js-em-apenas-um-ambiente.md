@@ -4,8 +4,8 @@ description: Como utilizar o NVM para gerenciar várias versões do Node.js em
   apenas um ambiente
 date: 2022-01-28 05:08:09
 image: assets/img/nvm.png
-category: dev
-background: "#637a91"
+category: node
+background: "#3c873a"
 ---
 ## Introdução
 
