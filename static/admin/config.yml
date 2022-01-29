@@ -42,7 +42,7 @@ collections:
           { label: 'Misc', value: '#7AAB13' },
           { label: 'DevOps', value: '#00563f' },
           { label: 'Gestão', value: '#003153' },
-          { label: 'Node', value: '#7AAB13' },
+          { label: 'Node', value: '#3c873a' },
         ]
       }
       - {label: "Body", name: "body", widget: "markdown"}
