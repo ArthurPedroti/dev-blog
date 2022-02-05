@@ -108,7 +108,7 @@ app.listen(3333, () => {
 ```jsx
 // tsconfig.json
 ...
-		"emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,             
   }
 }
@@ -154,8 +154,8 @@ Eu particularmente prefiro usar o próprio pacote do typeorm, que vem com a cli,
 // package.json
 ...
 	"scripts": {
-    "dev": "ts-node-dev --transpile-only src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+      "dev": "ts-node-dev --transpile-only src/server.ts",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
 	},
 ...
 ```
@@ -172,7 +172,7 @@ Passamos a flag “-n” para nomear a migration, e logo após executar, irá ap
 // {timestamp}-CreateProducts.ts
 import { MigrationInterface, QueryRunner } from "typeorm";
 
-export class CreateProducts1643634450284 implements MigrationInterface {
+  export class CreateProducts1643634450284 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
     }
