@@ -188,7 +188,7 @@ Para entender a migration, vamos primeiro reparar que ela possui dois métodos d
 Nesse exemplo vamos criar um tabela de produtos, com nome, descrição, e campos de data da criação e data da última atualização, ficando da seguinte forma:
 
 ```jsx
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class CreateProducts1643634450284 implements MigrationInterface {
 
