@@ -258,7 +258,7 @@ Ficando assim nossa estrutura final:
 
 ![Estrutura de pastas da aplicação](assets/img/node-typeorm5.png "Estrutura de pastas da aplicação")
 
-Se tudo estiver certo, vamos fazer uma requisição do tipo post em “http://localhost:3333” e teremos um produto criado:
+Se tudo estiver certo, vamos fazer uma requisição do tipo post em http://localhost:3333 e teremos um produto criado:
 
 ![Requisição de post na aplicação](assets/img/node-typeorm6.png "Requisição de post na aplicação")
 
