@@ -51,7 +51,7 @@ yarn create strapi-app my-project
 
 Vai aparecer duas opções de instalação, e vamos selecionar a opção "Custom". Depois ele vai perguntar se queremos utilizar algum template, digitamos "n", pois nesse exemplo não será necessário utilizar um.
 
-E então ele vai perguntar em qual banco você deseja instalar, neste exemplo irei utilizar o PostgreSQL, após selecionar o banco, você informa os dados que o Strapi irá utilizar para acessar o bando de dados.
+E então ele vai perguntar em qual banco você deseja instalar, neste exemplo irei utilizar o PostgreSQL, após selecionar o banco, você informa os dados que o Strapi irá utilizar para acessar o bando de dados. E no final, quando perguntar sobre habilitar a conexão SSL, pode selecionar não.
 
 Após isso, o Strapi vai estar fazendo toda a instalação e deixando tudo pronto para você.
 
@@ -133,7 +133,7 @@ Algo bem simples mesmo, só para vermos como funciona.
 
 Agora não esqueça de clicar em "Save", para que o Strapi realmente crie tudo que você inseriu.
 
-![Indicação de onde fica o "save" para criação do collection type](assets/img/save-strapi.png "Indicação de onde fica o \\\"save\\\" para criação do collection type")
+![Indicação de onde fica o "save" para criação do collection type](assets/img/save-strapi.png "Indicação de onde fica o \\\\"save\\\\" para criação do collection type")
 
 Quando você criar uma collection ou single type, você pode ir até a pasta "api" do seu projeto, e lá você verá toda a configuração que você fez ali pela interface, só que no formato de código.
 
