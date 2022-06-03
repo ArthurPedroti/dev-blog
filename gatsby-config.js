@@ -5,8 +5,8 @@ const queries = require('./src/utils/algolia_queries')
 module.exports = {
   siteMetadata: {
     title: `Arthur Pedroti`,
-    position: 'Coordenador de TI',
-    description: `Coordenador de TI na AGF Equipamentos, escrevo sobre o mundo da programação e gestão`,
+    position: 'Tech Manager',
+    description: `Tech Manager na AGF Equipamentos, escrevo sobre o mundo da programação e gestão`,
     author: `@arthurpedroti`,
     siteUrl: `https://dev.arthurpedroti.com.br/`
   },
