@@ -13,3 +13,5 @@ Fala pessoal, esse artigo é um dos artigos que eu crio para a EZ.devs, segue o 
 [Mantendo constância na atualização do projeto (ezdevs.com.br)](https://ezdevs.com.br/como-manter-a-constancia-na-atualizacao-do-projeto/)
 
 <!--EndFragment-->
+
+Se você tem alguma dúvida ou sugestão, não deixe de comentar aqui embaixo, até a próxima.😉
