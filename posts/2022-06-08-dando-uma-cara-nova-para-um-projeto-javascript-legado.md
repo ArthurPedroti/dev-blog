@@ -13,3 +13,5 @@ Fala pessoal, esse artigo é um dos artigos que eu crio para a EZ.devs, segue o 
 [Dando uma cara nova para um projeto Javascript legado (ezdevs.com.br)](https://ezdevs.com.br/dando-uma-cara-nova-para-um-projeto-javascript-legado/)
 
 <!--EndFragment-->
+
+Se você tem alguma dúvida ou sugestão, não deixe de comentar aqui embaixo, até a próxima.😉
