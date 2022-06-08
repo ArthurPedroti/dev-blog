@@ -26,7 +26,7 @@ collections:
         label: "Category",
         name: "category",
         widget: "select",
-        options: ["docker", "css", "js", "html", "svg", "dev", "misc", "devops", "gestão", "node", "frontend", "backend"]
+        options: ["docker", "css", "js", "html", "svg", "dev", "misc", "devops", "gestão", "node", "front", "back"]
       }
       - {
         label: "Background",
@@ -43,8 +43,8 @@ collections:
           { label: 'DevOps', value: '#00563f' },
           { label: 'Gestão', value: '#003153' },
           { label: 'Node', value: '#3c873a' },
-          { label: "Frontend", value: "#007bff" },
-          { label: 'Backend', value: '#3c873a' },
+          { label: "Front", value: "#007bff" },
+          { label: 'Back', value: '#3c873a' },
         ]
       }
       - {label: "Body", name: "body", widget: "markdown"}
