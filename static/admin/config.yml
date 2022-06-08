@@ -26,7 +26,7 @@ collections:
         label: "Category",
         name: "category",
         widget: "select",
-        options: ["docker", "css", "js", "html", "svg", "dev", "misc", "devops", "gestão", "node", "front", "back"]
+        options: ["docker", "css", "js", "html", "svg", "dev", "misc", "devops", "gestão", "node", "front", "back", "react"]
       }
       - {
         label: "Background",
@@ -45,6 +45,7 @@ collections:
           { label: 'Node', value: '#3c873a' },
           { label: "Front", value: "#007bff" },
           { label: 'Back', value: '#3c873a' },
+          { label: 'React', value: '#61dafb' },
         ]
       }
       - {label: "Body", name: "body", widget: "markdown"}
