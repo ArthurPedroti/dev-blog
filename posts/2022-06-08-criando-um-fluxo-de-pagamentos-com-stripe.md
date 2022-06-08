@@ -13,3 +13,5 @@ Fala pessoal, esse artigo é um dos artigos que eu crio para a EZ.devs, segue o 
 [Criando um fluxo de pagamentos com Stripe (ezdevs.com.br)](https://ezdevs.com.br/fluxo-de-pagamentos-com-str/)
 
 <!--EndFragment-->
+
+Se você tem alguma dúvida ou sugestão, não deixe de comentar aqui embaixo, até a próxima.😉
