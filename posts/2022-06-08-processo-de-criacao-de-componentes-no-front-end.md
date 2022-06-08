@@ -13,3 +13,5 @@ Fala pessoal, esse artigo é um dos artigos que eu crio para a EZ.devs, segue o 
 [Processo de criação de componentes no Front-end (ezdevs.com.br)](https://ezdevs.com.br/processo-de-criacao-de-componentes-no-front-end/)
 
 <!--EndFragment-->
+
+Se você tem alguma dúvida ou sugestão, não deixe de comentar aqui embaixo, até a próxima.😉
