@@ -3,8 +3,8 @@ title: Multiple Data on the same Row in React-Table
 description: How adapt the columns in react-table to show more than one data
 date: 2022-06-08 06:37:29
 image: assets/img/coding-g37fc53127_1920.jpg
-category: front
-background: "#007bff"
+category: react
+background: "#61dafb"
 ---
 ## Introduction
 
