@@ -1,5 +1,5 @@
 ---
-title: "[ENG] Multiple Data on the same Row in React-Table"
+title: "[ENG] Multiple Data on the same column in React-Table"
 description: How adapt the columns in react-table to show more than one data
 date: 2022-06-08 06:37:29
 image: assets/img/coding-g37fc53127_1920.jpg
