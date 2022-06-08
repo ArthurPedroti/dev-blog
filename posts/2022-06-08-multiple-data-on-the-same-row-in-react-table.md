@@ -12,7 +12,7 @@ When you have some information in the table, and you need to compress this data 
 
 ## 1º Choosing the master data
 
-In this example, we will use this data form:
+In this example, we will use this data model:
 
 ```jsx
 export type User = {
