@@ -12,7 +12,7 @@ When you have some information in the table, and you need to compress this data 
 
 ## 1º Choosing the master data
 
-In this example, we will use this data form:
+In this example, we will use this data model:
 
 ```jsx
 export type User = {
@@ -25,7 +25,7 @@ export type User = {
 }
 ```
 
-In this shape, we are going to join the month and the delivery in the same column.
+In this shape, we are going to join the firstName and lastName in the same column.
 
 Then we need to create a column and choose one of these two datas to be the “master” data, in which we will use for filtering and grouping.
 
@@ -46,9 +46,9 @@ So, in a first moment, let’s build the fisrtName column normally:
 
 ## 2º Getting the other datas
 
-Now, we have to get the other data we will use. So, when we don't create a column, in other words, we don’t will create the lastName column and hide later, we’re not really going to create the column.
+Now, we have to get the other data we will use, and we not going to create the lastName column and hide it later, we are going to get this data without creating this column.
 
-Then in react-table this data really doesn’t exist and there’s only in one place to get that, and it’s in a row property called “original”, this property shows exactly data that the table receives, so we need to pass all the data to react-table, and after process the columns, react-table deletes data that doesn’t have a corresponding column.
+In react-table this data really doesn’t exist and there’s only in one place to get that, and it’s in a row property called “original”, this property shows exactly data that the table receives, so we need to pass all the data to react-table, and after process the columns, react-table deletes data that doesn’t have a corresponding column.
 
 Now, let’s  adapt our column to use original property and show the firstName data:
 
@@ -76,7 +76,7 @@ If you do some tests using this approach, you will see that if you try to group 
 
 Now our column with the row property is working both normaly and grouped way. 
 
-## 3º Grouping datas
+## 3º Showing the datas
 
 The last part is getting the other values from the original property, in our case, we are going to get the lastName and show it next to the name:
 
