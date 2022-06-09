@@ -107,7 +107,7 @@ Agora precisamos importar o nosso repositório no nosso serviço, mas qual seria
 Depois de algum tempo importando e instanciando classes e mais classes, você vai perceber que não compensa, e que o código vai começar a fica meio poluído, e que principalmente, se você precisar testar esses serviços depois, você vai ter problemas, pois não vai ser tão simples mockar esses repositórios, mas para resolver isso é simples, bastar usarmos injeção de dependências, e para isso, vamos instalar a biblioteca tsyringe:
 
 ```jsx
-yarn add tsringe
+yarn add tsyringe
 ```
 
 <https://github.com/microsoft/tsyringe>
