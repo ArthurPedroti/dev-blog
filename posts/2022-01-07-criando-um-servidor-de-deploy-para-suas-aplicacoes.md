@@ -117,7 +117,7 @@ pm2 start hello.js
 
 Você pode consultar os serviços que estão rodando pelo comand `pm2 list`
 
-![Imagem da tabela que mostra os serviços no PM2](assets/img/deploy03.png "\"pm2 list\" output")
+![Imagem da tabela que mostra os serviços no PM2](assets/img/deploy03.png "\\"pm2 list\\" output")
 
 Como você pode ver, ele assumiu o nome do nosso arquivo como o nome de serviço, e agora ele já está gerenciando esse serviço, e mesmo que a aplicação tenha algum crash, ele já vai automaticamente reiniciar para você.
 
@@ -170,8 +170,6 @@ Arquivo hello:
 ```bash
 server {
         server_name hello.com.br;
-
-server_name _;
 
 location / {
         proxy_pass http://localhost:3000;
