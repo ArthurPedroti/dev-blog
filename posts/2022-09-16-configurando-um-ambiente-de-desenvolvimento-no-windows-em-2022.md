@@ -36,7 +36,7 @@ choco install vscode
 
 Caso você queira algumas configurações prontas, abra o vscode e pressione `Ctrl+p` , digite “user settings” e selecione a opção abaixo:
 
-![User Settings vscode](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/080ce143-5723-488a-b9dd-3d155ebf30d7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T180918Z&X-Amz-Expires=86400&X-Amz-Signature=a0d1d2879d6063055f9147c35de805d83107bc5d54d96ed53c571390037f3c7d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "User Settings vscode")
+![User Settings vscode](assets/img/windows-01.png "User Settings vscode")
 
 Agora copie e cole as configurações do link abaixo:
 
@@ -67,7 +67,7 @@ Após a instalação, reinicie seu computador.
 
 Por padrão, a instalação já vai instalar o Ubuntu na sua máquina, e ao reiniciar o computador, ele vai abrir o Ubuntu e pedir para que você digite o nome de usuário que você irá utilizar no seu Ubuntu.
 
-![Login Ubuntu](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8da7ae5e-ce18-4215-bf70-a5bf3e00b75f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181020Z&X-Amz-Expires=86400&X-Amz-Signature=a159dad795b14bfc026ddb6cb63343f6826f5947b985c24e921c8c338fdb5933&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "Login Ubuntu")
+![Login Ubuntu](assets/img/windows-02.png "Login Ubuntu")
 
 Depois ele vai pedir para que você coloque a senha, se você digitar a senha e não aparecer nada, fique tranquilo, o Ubuntu é assim mesmo, não vai aparecer que você está digitando a senha, nem aparece aqueles “*” que estamos acostumados, é só digitar a senha e apertar Enter.
 
@@ -81,7 +81,7 @@ E por padrão, já está vindo também na versão WSL2, que a versão mais otimi
 
 Entre na Microsoft Store, e instale o “Windows Terminal”, logo após, abra o Windows Terminal, acesse as configurações e mude o perfil padrão para o Ubuntu e o terminal padrão para o Windows Terminal, assim ao abrir o seu terminal, já vai abrir direto no Ubuntu:
 
-![Configurações Windows Terminal](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bf175479-ec9b-4c18-b097-80fae3703cbc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181047Z&X-Amz-Expires=86400&X-Amz-Signature=17405ae20c9de8eb3fb6d07aa60295a3bf54e8c6e7a26a9ed1514adfcb3400b4&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "Configurações Windows Terminal")
+![Configurações Windows Terminal](assets/img/windows-03.png "Configurações Windows Terminal")
 
 ## 5º Ajustando o diretorio inicial
 
@@ -95,11 +95,11 @@ explorer.exe .
 
 Irá abrir um explorer do windows, copie o endereço desse diretório:
 
-![Caminho explorer Windows](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bb74c60b-d7a8-490f-b068-ca0e6b3b5e48/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181123Z&X-Amz-Expires=86400&X-Amz-Signature=b22dd9e34438f70d57950d1ab3fe3161530dba1d336c846e2aac17d076572be8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "Caminho explorer Windows")
+![Caminho explorer Windows](assets/img/windows-04.png "Caminho explorer Windows")
 
 Acesse novamente as configurações do terminal, selecione o Ubuntu no menu esquerdo, e copie o endereço que você acabou de copiar no campo de “Diretório inicial”:
 
-![Configurações Windows Terminal](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8290902c-0b95-4226-ade2-f275eb22f2da/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181147Z&X-Amz-Expires=86400&X-Amz-Signature=d1ad99d63dc57678f79c63937d86132e7e9e16307ba7bbb5c8ea5af55b18ba93&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "Configurações Windows Terminal")
+![Configurações Windows Terminal](assets/img/windows-05.png "Configurações Windows Terminal")
 
 Agora, ao abrir o terminal, já abrirá direto na home do seu usuário.
 
@@ -111,11 +111,11 @@ Para mudar o tema basta acessar as Configurações > Esquema de cores, e selecio
 
 Segue o link para copiar: [Dark theme for Windows Terminal and 275+ apps — Dracula (draculatheme.com)](https://draculatheme.com/windows-terminal)
 
-![Tema Drácula](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/deb2e2a5-2465-4022-98f1-8e259d19e431/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181203Z&X-Amz-Expires=86400&X-Amz-Signature=81056b22184a734fc7b99850980f546bb03921ddd49d6a363c58054f018cd633&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "Tema Drácula")
+![Tema Drácula](assets/img/windows-06.png "Tema Drácula")
 
 Agora, vamos colocar o tema em cada terminal manualmente, pelo próprio JSON ainda, pois pela interface de configuração normalmente não funciona, então altere o array “list” da seguinte maneira:
 
-![Configuração Scheme Windows Terminal](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8473673f-4166-4132-8518-52f1aa82a898/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181223Z&X-Amz-Expires=86400&X-Amz-Signature=df210ef02ddd63e8a693d538240f1494b0db46df6271da75fc2f7ff01f9a0972&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "Configuração Scheme Windows Terminal")
+![Configuração Scheme Windows Terminal](assets/img/windows-07.png "Configuração Scheme Windows Terminal")
 
 Pronto, agora todos os seus terminais já estão com o tema de acordo.
 
@@ -281,7 +281,7 @@ more id_ed25519.pub
 
 Copie todo o valor que aparecer, acesse as configurações do seu Github, entre em “SSH and GPG keys”, e depois em “New SSH Key”
 
-![SSH and GPG Keys Github](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6993c28c-b648-43d7-a000-6a05cdc0f372/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220916T181309Z&X-Amz-Expires=86400&X-Amz-Signature=2c77524ab20b34abbc73a6e06ac992fb54cb3ad7447447a77dc1cfe083edddd9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject "SSH and GPG Keys Github")
+![SSH and GPG Keys Github](assets/img/windows-08.png "SSH and GPG Keys Github")
 
 De um nome para você identificar a chave, cole a key, e depois salve.
 
