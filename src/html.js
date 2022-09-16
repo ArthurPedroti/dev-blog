@@ -15,6 +15,10 @@ export default function HTML(props) {
       </head>
       <body {...props.bodyAttributes} className="dark">
         <script
+          type="text/javascript"
+          src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
+        />
+        <script
           dangerouslySetInnerHTML={{
             __html: `
             (function() {

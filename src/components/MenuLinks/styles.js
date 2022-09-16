@@ -3,6 +3,8 @@ import media from 'styled-media-query'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const Wrapper = styled.nav`
+  margin-bottom: 1rem;
+
   ${media.lessThan('large')`
     display: none;
   `}
