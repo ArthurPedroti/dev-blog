@@ -6,12 +6,6 @@ image: assets/img/maxwell-nelson-taiug8cpkaq-unsplash-768x512.jpg
 category: misc
 background: "#7AAB13"
 ---
-# Configurando um ambiente de desenvolvimento no Windows em 2022
-
-Um passo a passo atualizado para instalação do WSL2 e suas configurações
-
-*Texto e ortografia revisados: 16/09/2022*
-
 ## Introdução
 
 As vezes entra um integrante novo para a equipe, ou você formata seu computador, compra um novo, e tem que instalar e reconfigurar tudo do zero, tem que ir atrás de um monte de tutorial, cada um para uma coisa etc. Nesse artigo eu compilo toda a configuração inicial do meu ambiente de desenvolvimento do Windows com WSL, varias outras ferramentas importantes, e outras dicas no final.
