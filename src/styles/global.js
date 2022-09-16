@@ -136,5 +136,11 @@ const GlobalStyles = createGlobalStyle`
     background: var(--yellow);
     color: var(--background);
   }
+  @media(max-width: 600px) {
+    .gatsby-remark-prismjs-copy-button {
+      background: var(--yellow);
+      color: var(--background);
+    }
+  }
 `
 export default GlobalStyles
