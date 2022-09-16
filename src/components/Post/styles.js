@@ -65,7 +65,7 @@ export const MainContent = styled.section`
     color: var(--postColor);
     font-size: 1.25rem;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 1.5;
     letter-spacing: 0.069rem;
     padding: 0 1.4rem;
     ${media.lessThan('large')`
@@ -90,7 +90,7 @@ export const MainContent = styled.section`
     margin: 0 auto 1.6rem;
   }
   li {
-    padding: 0.625rem 0;
+    padding: 0.325rem 0;
     & > ul {
       margin-bottom: 0;
     }

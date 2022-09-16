@@ -113,5 +113,28 @@ const GlobalStyles = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     background: var(--blue);
   }
+  .gatsby-remark-prismjs-copy-button-container {
+    touch-action: none;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 40px;
+    left: -34px;
+    margin-top: -28px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .gatsby-remark-prismjs-copy-button {
+    cursor: pointer;
+    pointer-events: initial;
+    font-size: 13px;
+    padding: 4px 6px 6px 6px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .gatsby-remark-prismjs-copy-button:hover {
+    background: var(--yellow);
+    color: var(--background);
+  }
 `
 export default GlobalStyles

@@ -54,6 +54,7 @@ module.exports = {
             },
           },
           `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs-copy-button`,
           `gatsby-remark-prismjs`,
           {
             resolve: "gatsby-remark-external-links",
