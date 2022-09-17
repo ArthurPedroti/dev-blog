@@ -56,6 +56,7 @@ export const Wrapper = styled.aside`
     text-shadow: none;
     font-weight: 700 !important;
     font-size: 14px !important;
+    margin-bottom: 12px !important;
   }
 
   img.kofiimg {
@@ -106,5 +107,55 @@ export const Wrapper = styled.aside`
     width: 22px !important;
     display: initial;
     animation: 'kofi-wiggle' 3s infinite;
+  }
+
+  img.newsimg {
+    display: initial !important;
+    vertical-align: middle;
+    height: 13px !important;
+    width: 20px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: none;
+    margin-top: 0;
+    margin-left: 5px !important;
+    margin-right: 0 !important;
+    margin-bottom: 3px !important;
+    content: url('https://cdn-icons-png.flaticon.com/512/2218/2218521.png');
+
+    @keyframes news-wiggle {
+      0% {
+        transform: rotate(0) scale(1);
+      }
+      60% {
+        transform: rotate(0) scale(1);
+      }
+      75% {
+        transform: rotate(0) scale(1.12);
+      }
+      80% {
+        transform: rotate(0) scale(1.1);
+      }
+      84% {
+        transform: rotate(-10deg) scale(1.1);
+      }
+      88% {
+        transform: rotate(10deg) scale(1.1);
+      }
+      92% {
+        transform: rotate(-10deg) scale(1.1);
+      }
+      96% {
+        transform: rotate(10deg) scale(1.1);
+      }
+      100% {
+        transform: rotate(0) scale(1);
+      }
+    }
+
+    height: 18px !important;
+    width: 20px !important;
+    display: initial;
+    animation: 'news-wiggle' 3s infinite;
   }
 `

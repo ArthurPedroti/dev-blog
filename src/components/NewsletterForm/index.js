@@ -10,8 +10,8 @@ const NewsletterForm = () => (
       novidades!
     </p>
     <a
-      title="Me compre um café"
-      className="kofi-button"
+      title="Inscrever-se"
+      className="news-button"
       style={{
         'background-color': 'var(--borders)'
       }}
@@ -19,12 +19,12 @@ const NewsletterForm = () => (
       target="_blank"
       rel="noreferrer"
     >
-      <span className="kofitext">
+      <span className="newstext">
         Inscrever-se!{' '}
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW73A5JpwXNXuVwwi-kgw9kwU14UuQVEIi0Q&usqp=CAU"
+          src="https://storage.ko-fi.com/cdn/cup-border.png"
           alt="Ko-fi donations"
-          className="kofiimg"
+          className="newsimg"
         />
       </span>
     </a>

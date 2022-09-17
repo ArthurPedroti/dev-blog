@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  span.kofitext {
+  span.newstext {
     color: var(--texts) !important;
     letter-spacing: -0.15px !important;
     text-wrap: none;
@@ -12,7 +12,7 @@ export const Wrapper = styled.main`
     text-decoration: none !important;
     text-shadow: 0 1px 1px rgba(34, 34, 34, 0.05);
   }
-  a.kofi-button {
+  a.news-button {
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
     line-height: 36px !important;
     min-width: 150px;
@@ -33,7 +33,7 @@ export const Wrapper = styled.main`
     font-size: 14px !important;
   }
 
-  img.kofiimg {
+  img.newsimg {
     display: initial !important;
     vertical-align: middle;
     height: 13px !important;
@@ -47,7 +47,7 @@ export const Wrapper = styled.main`
     margin-bottom: 3px !important;
     content: url('https://cdn-icons-png.flaticon.com/512/2218/2218521.png');
 
-    @keyframes kofi-wiggle {
+    @keyframes news-wiggle {
       0% {
         transform: rotate(0) scale(1);
       }
@@ -80,6 +80,6 @@ export const Wrapper = styled.main`
     height: 18px !important;
     width: 20px !important;
     display: initial;
-    animation: 'kofi-wiggle' 3s infinite;
+    animation: 'news-wiggle' 3s infinite;
   }
 `
