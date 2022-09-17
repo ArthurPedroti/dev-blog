@@ -21,12 +21,12 @@ const Sidebar = () => (
       rel="noreferrer"
     >
       <span className="kofitext">
+        Me compre um café{' '}
         <img
           src="https://storage.ko-fi.com/cdn/cup-border.png"
           alt="Ko-fi donations"
           className="kofiimg"
         />
-        Me compre um café💙
       </span>
     </a>
   </S.Wrapper>

@@ -1,13 +1,6 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  h3 {
-    img {
-      height: 22px !important;
-      width: 33px !important;
-    }
-  }
-
   span.kofitext {
     color: var(--texts) !important;
     letter-spacing: -0.15px !important;
@@ -43,7 +36,8 @@ export const Wrapper = styled.main`
   img.kofiimg {
     display: initial !important;
     vertical-align: middle;
-
+    height: 13px !important;
+    width: 20px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     border: none;
@@ -51,7 +45,7 @@ export const Wrapper = styled.main`
     margin-left: 5px !important;
     margin-right: 0 !important;
     margin-bottom: 3px !important;
-    content: url('https://storage.ko-fi.com/cdn/cup-border.png');
+    content: url('https://cdn-icons-png.flaticon.com/512/2218/2218521.png');
 
     @keyframes kofi-wiggle {
       0% {
@@ -83,8 +77,8 @@ export const Wrapper = styled.main`
       }
     }
 
-    height: 15px;
-    width: 22px;
+    height: 18px !important;
+    width: 20px !important;
     display: initial;
     animation: 'kofi-wiggle' 3s infinite;
   }

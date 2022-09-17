@@ -67,8 +67,8 @@ export const Wrapper = styled.aside`
     padding-bottom: 0 !important;
     border: none;
     margin-top: 0;
-    margin-right: 5px !important;
-    margin-left: 0 !important;
+    margin-left: 5px !important;
+    margin-right: 0 !important;
     margin-bottom: 3px !important;
     content: url('https://storage.ko-fi.com/cdn/cup-border.png');
 
