@@ -34,6 +34,10 @@ choco install vscode
 
 [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 
+Uma dica muito boa também é a ferramenta de sync do próprio VsCode, que permitir que você suba para a nuvem todas as suas configurações e em uma nova instalação como essa, você já puxe todas as suas configurações e não perca tempo configurando nada.
+
+![Sync Github](assets/img/windows-09.png "Sync Github")
+
 Caso você queira algumas configurações prontas, abra o vscode e pressione `Ctrl+p` , digite “user settings” e selecione a opção abaixo:
 
 ![User Settings vscode](assets/img/windows-01.png "User Settings vscode")
@@ -284,6 +288,16 @@ Copie todo o valor que aparecer, acesse as configurações do seu Github, entre 
 ![SSH and GPG Keys Github](assets/img/windows-08.png "SSH and GPG Keys Github")
 
 De um nome para você identificar a chave, cole a key, e depois salve.
+
+Importante também já fazer algumas configurações básicas de autenticação do github, que é a configuração do seu e-mail e nome de usuário para commits:
+
+```jsx
+git config --global user.email "arthurpedroti@gmail.com"
+```
+
+```jsx
+git config --global user.name "Arthur Pedroti"
+```
 
 Pronto, agora seu zsh já ira te autenticar no Github automaticamente, e você pode usar essa mesma chave pública para vários outros serviços semelhantes.
 
