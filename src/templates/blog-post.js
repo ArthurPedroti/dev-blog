@@ -8,6 +8,7 @@ import UtterancesComments from '../components/UtterancesComments'
 import { appendComments } from '../utils/appendComments'
 
 import * as S from '../components/Post/styles'
+import BuyMeACoffee from '../components/BuyMeACoffee'
 // import Comments from '../components/Comments'
 
 const BlogPost = ({ data, pageContext }) => {
@@ -36,6 +37,22 @@ const BlogPost = ({ data, pageContext }) => {
       </S.PostHeader>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        <hr />
+        <S.BuyMeACoffee>
+          <div>
+            <p>
+              E como um bom programador, eu sei que você adora um cafézinho!
+              Então por que você não me ajuda e me dá um cafézinho também?💙
+            </p>
+            <p>
+              Com apenas R$5,00 reais você me ajuda, e{' '}
+              <strong>principalmente</strong>, continua me incentivando a trazer
+              mais conteúdos totalmente gratuitos para toda a comunidade, basta
+              apenas clicar no link abaixo, conto com a sua colaboração😉
+            </p>
+          </div>
+          <BuyMeACoffee />
+        </S.BuyMeACoffee>
       </S.MainContent>
       <RecommendedPosts next={next} previous={previous} />
       <UtterancesComments commentBox={commentBox} />

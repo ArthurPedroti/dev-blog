@@ -205,3 +205,7 @@ export const MainContent = styled.section`
     }
   }
 `
+
+export const BuyMeACoffee = styled.div`
+  text-align: center;
+`
