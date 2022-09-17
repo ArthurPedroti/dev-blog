@@ -12,6 +12,12 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <script
+          id="mcjs"
+          dangerouslySetInnerHTML={{
+            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7fce39450b6e24cfe996509ec/252d12726dbcbb9997fa76542.js");`
+          }}
+        />
       </head>
       <body {...props.bodyAttributes} className="dark">
         <script
@@ -19,12 +25,6 @@ export default function HTML(props) {
           src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
         />
         <script
-          dangerouslySetInnerHTML={{
-            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7fce39450b6e24cfe996509ec/252d12726dbcbb9997fa76542.js");`
-          }}
-        />
-        <script
-          id="mcjs"
           dangerouslySetInnerHTML={{
             __html: `
             (function() {
