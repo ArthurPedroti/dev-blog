@@ -85,7 +85,7 @@ E por padrão, já está vindo também na versão WSL2, que a versão mais otimi
 
 Entre na Microsoft Store, e instale o “Windows Terminal”, logo após, abra o Windows Terminal, acesse as configurações e mude o perfil padrão para o Ubuntu e o terminal padrão para o Windows Terminal, assim ao abrir o seu terminal, já vai abrir direto no Ubuntu:
 
-![Configurações Windows Terminal](assets/img/windows-03.png "Configurações Windows Terminal")
+![Configurações Windows Terminal](assets/img/windows-10.png "Configurações Windows Terminal")
 
 ## 5º Ajustando o diretorio inicial
 
