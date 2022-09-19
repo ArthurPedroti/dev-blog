@@ -226,7 +226,7 @@ Agora iremos adicionar alguns plugins para facilitar a nossa vida ao utilizar o 
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 ```
 
-Ele ira perguntar se você deseja instalar alguns plugins padrões, pode aceitar e continuar  a instalação.
+Ele irá perguntar se você deseja instalar alguns plugins padrões, pode aceitar e continuar  a instalação.
 
 Agora, vamos abrir o .zshrc novamente e depois da última linha adicionaremos as seguintes linhas:
 
