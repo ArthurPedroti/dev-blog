@@ -232,7 +232,6 @@ Agora, vamos abrir o .zshrc novamente e depois da última linha adicionaremos as
 
 ```jsx
 ### Plugins zinit
-
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
