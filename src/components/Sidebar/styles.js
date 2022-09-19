@@ -21,8 +21,13 @@ export const Wrapper = styled.aside`
     padding: 1rem 2rem;
     width: 100%;
 
-    a.kofi-button {
+    div.sidebarlinks {
       margin-left: auto;
+    }
+
+    a.kofi-button {
+      margin-left: 12px !important;
+      margin-bottom: 0px !important;
     }
   `}
 
