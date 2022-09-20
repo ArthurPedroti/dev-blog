@@ -38,6 +38,10 @@ Uma dica muito boa também é a ferramenta de sync do próprio VsCode, que permi
 
 ![Sync Github](assets/img/windows-09.png "Sync Github")
 
+Se você sincronizou as suas configurações e já usava o WSL, **lembre-se** de ir na aba de extensões do VsCode e fazer o download das suas extensões no WSL:
+
+![Extensões VsCode](assets/img/windows-11.png "Extensões VsCode")
+
 Caso você queira algumas configurações prontas, abra o vscode e pressione `Ctrl+p` , digite “user settings” e selecione a opção abaixo:
 
 ![User Settings vscode](assets/img/windows-01.png "User Settings vscode")
