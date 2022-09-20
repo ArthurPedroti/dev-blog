@@ -1,5 +1,5 @@
 ---
-title: Configurando um ambiente de desenvolvimento no Windows em 2022
+title: Configurando um ambiente de desenvolvimento no Windows em 2022 (WSL2)
 description: Um passo a passo atualizado para instalação do WSL2 e suas configurações
 date: 2022-09-16 03:07:45
 image: assets/img/maxwell-nelson-taiug8cpkaq-unsplash-768x512.jpg
@@ -37,6 +37,10 @@ choco install vscode
 Uma dica muito boa também é a ferramenta de sync do próprio VsCode, que permitir que você suba para a nuvem todas as suas configurações e em uma nova instalação como essa, você já puxe todas as suas configurações e não perca tempo configurando nada.
 
 ![Sync Github](assets/img/windows-09.png "Sync Github")
+
+Se você sincronizou as suas configurações e já usava o WSL, **lembre-se** de ir na aba de extensões do VsCode e fazer o download das suas extensões no WSL:
+
+![Extensões VsCode](assets/img/windows-11.png "Extensões VsCode")
 
 Caso você queira algumas configurações prontas, abra o vscode e pressione `Ctrl+p` , digite “user settings” e selecione a opção abaixo:
 
