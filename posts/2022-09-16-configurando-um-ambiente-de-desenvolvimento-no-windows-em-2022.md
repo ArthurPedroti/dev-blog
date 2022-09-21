@@ -3,7 +3,7 @@ title: Configurando um ambiente de desenvolvimento no Windows em 2022 (Completo
   e Atualizado com WSL2)
 description: Um passo a passo atualizado para instalação do WSL2 e suas configurações
 date: 2022-09-16 03:07:45
-image: assets/img/maxwell-nelson-taiug8cpkaq-unsplash-768x512.jpg
+image: assets/img/imagem-artigo-devarthur.png
 category: misc
 background: "#7AAB13"
 ---
