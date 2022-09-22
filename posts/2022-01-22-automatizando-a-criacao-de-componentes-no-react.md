@@ -2,7 +2,7 @@
 title: Automatizando a criação de componentes no React
 description: Como criar toda a estrutura de um componente usando apenas uma linha de comando
 date: 2022-01-22 09:46:58
-image: assets/img/plop_thumb.jpg
+image: assets/img/automatizando-a-criacao-de-componentes-no-react.png
 category: dev
 background: "#637a91"
 ---
