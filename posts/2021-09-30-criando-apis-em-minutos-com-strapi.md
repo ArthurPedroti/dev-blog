@@ -3,7 +3,7 @@ title: Criando APIs em minutos com Strapi
 description: Apresentando o Strapi, um headless CMS totalmente em Javascript,
   muito fácil e prático de se usar
 date: 2021-09-30 10:26:39
-image: assets/img/strapi.png
+image: assets/img/criando-apis-em-minutos-com-strapi.png
 category: js
 background: "#D6BA32"
 ---
