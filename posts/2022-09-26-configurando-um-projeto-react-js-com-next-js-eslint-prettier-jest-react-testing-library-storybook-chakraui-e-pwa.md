@@ -275,9 +275,13 @@ module.exports = {
 Se você estiver utilizando a configuração **baseURL** no seu tsconfig, é preciso adicionar uma configuração a mais no seu main.js:
 
 ```jsx
-webpackFinal: (config) => {
-  config.resolve.modules.push(`${process.cwd()}/src`)
-  return config
+// .storybook/main.js
+module.exports = {
+// ...
+	webpackFinal: (config) => {
+	  config.resolve.modules.push(`${process.cwd()}/src`)
+	  return config
+	}
 }
 ```
 
@@ -290,10 +294,15 @@ yarn add -D storybook-addon-next
 E adicionar esse addon ao nosso main.js:
 
 ```jsx
-addons: [
+// .storybook/main.js
+module.exports = {
+// ...
+	addons: [
 		// ...
-    "storybook-addon-next"
-  ],
+	  "storybook-addon-next"
+	],
+//...
+}
 ```
 
 O Storybook tambem cria uma pasta “stories”, dentro da pasta **src**, que podemos deletar.
