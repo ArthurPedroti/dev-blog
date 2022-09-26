@@ -280,6 +280,7 @@ webpackFinal: (config) => {
   return config
 }
 ```
+
 Como estamos utilizando o Next.js, existem algumas features que não funcionam automaticamente no Storybook, como o next-router e o next-image, e para isso precisamos de um addon para o Storybook entender essas features, para isso vamos instalar o seguinte pacote:
 
 ```jsx
@@ -447,11 +448,6 @@ export const parameters = {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
-    },
-  },
-  nextRouter: {
-    query: {
-      foo: 'this-is-a-global-override',
     },
   },
   chakra: {
