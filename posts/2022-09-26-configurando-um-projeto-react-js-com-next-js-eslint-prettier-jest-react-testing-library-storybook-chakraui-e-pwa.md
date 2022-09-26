@@ -280,25 +280,19 @@ webpackFinal: (config) => {
   return config
 }
 ```
-
-E no preview.js adicionaremos a configuração do next-router:
+Como estamos utilizando o Next.js, existem algumas features que não funcionam automaticamente no Storybook, como o next-router e o next-image, e para isso precisamos de um addon para o Storybook entender essas features, para isso vamos instalar o seguinte pacote:
 
 ```jsx
-// .storybook/preview.js
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
-  nextRouter: {
-    query: {
-      foo: 'this-is-a-global-override',
-    },
-  },
-}
+yarn add -D storybook-addon-next
+```
+
+E adicionar esse addon ao nosso main.js:
+
+```jsx
+addons: [
+		// ...
+    "storybook-addon-next"
+  ],
 ```
 
 O Storybook tambem cria uma pasta “stories”, dentro da pasta **src**, que podemos deletar.
