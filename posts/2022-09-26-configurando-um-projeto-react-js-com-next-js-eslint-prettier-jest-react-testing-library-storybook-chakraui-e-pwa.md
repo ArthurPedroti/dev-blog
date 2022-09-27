@@ -242,6 +242,15 @@ import '@testing-library/jest-dom/extend-expect'
 ```
 
 O parametro **collectCoverageFrom** indica quais pastas o Jest estará procurando os testes, no exemplo acima, eu coloco os testes dentro das pastas dos componentes e dentro das pastas dos templates, que eu utilizo para construir as minhas páginas, mas fica a seu critério essa configuração.
+Se você estiver utilizando a configuração **baseURL** no seu tsconfig, é preciso adicionar uma configuração a mais no seu jest.config.js:
+
+```jsx
+// jest.config.js
+const customJestConfig = {
+	// ...
+	modulePaths: ['<rootDir>/src/']
+}
+```
 
 ## Instalando o Storybook
 
