@@ -16,7 +16,7 @@ Aprenda a realizar todas as configurações para utilizar essa stack fantástica
 
 Conforme vamos adicionando algumas ferramentas ao nosso projeto, precisamos sempre verificar como as diferentes stacks e ferramentas que utilizamos interagem entre si, e se estas possuem integração. Conforme as bibliotecas vão atualizando, essas integrações também vão mudando e precisamos revisar e ir alterando as bases do nosso projeto. Esse post é uma documentação das configurações iniciais do meu boilerplate para meus projetos atuais de frontend, que revisarei conforme as atualizações forem surgindo ao longo do tempo.
 
-Quer aprender a configurar do zero um projeto em Next.js, com ESLint/Prettier para correção do seu código, Jest/React Testing Library para teste, Storybook e ChakraUI para prototipação e estilização, e a configuração para tudo isso funcionar com PWA?
+Quer aprender a configurar do zero um projeto em Next.js, com ESLint/Prettier para correção do seu código, Jest/React Testing Library para testes, Storybook e ChakraUI para prototipação e estilização, e a configuração para tudo isso funcionar com PWA?
 
 Não vai deixar de conferir, né? Então dá uma olhada abaixo para o post na íntegra👇
 
