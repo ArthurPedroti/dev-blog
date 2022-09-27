@@ -174,7 +174,7 @@ Depois vamos adicionar um plugin para integrar o ESLint com o prettier:
 yarn add --dev eslint-plugin-prettier eslint-config-prettier
 ```
 
-E adicionar o plugin ao **extends n**a configuração do nosso ESLint:
+E adicionar o plugin ao **extends** na configuração do nosso ESLint:
 
 ```jsx
 // .eslintrc.json
