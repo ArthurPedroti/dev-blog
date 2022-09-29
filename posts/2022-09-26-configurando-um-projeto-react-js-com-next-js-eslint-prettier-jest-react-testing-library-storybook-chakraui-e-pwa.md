@@ -569,15 +569,15 @@ export default {{pascalCase name}}
 
 ```jsx
 // stories.tsx.hbs
-import { Story, Meta } from '@storybook/react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
 import {{pascalCase name}} from '.'
 
 export default {
   title: '{{pascalCase name}}',
   component: {{pascalCase name}}
-} as Meta
+} as ComponentMeta<typeof {{pascalCase name}}>
 
-export const Default: Story = () => <{{pascalCase name}} />
+export const Default: ComponentStory<typeof {{pascalCase name}}> = () => <{{pascalCase name}} />
 ```
 
 ```jsx
