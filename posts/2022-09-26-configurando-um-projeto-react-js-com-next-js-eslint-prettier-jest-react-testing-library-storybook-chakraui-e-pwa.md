@@ -8,10 +8,6 @@ image: assets/img/configurando-um-projeto-react.js-com-next.js-eslintprettier-je
 category: react
 background: "#61dafb"
 ---
-Aprenda a realizar todas as configurações para utilizar essa stack fantástica para o seu frontend
-
-*Texto e ortografia revisados:* 
-
 ## Introdução
 
 Conforme vamos adicionando algumas ferramentas ao nosso projeto, precisamos sempre verificar como as diferentes stacks e ferramentas que utilizamos interagem entre si, e se estas possuem integração. Conforme as bibliotecas vão atualizando, essas integrações também vão mudando e precisamos revisar e ir alterando as bases do nosso projeto. Esse post é uma documentação das configurações iniciais do meu boilerplate para meus projetos atuais de frontend, que revisarei conforme as atualizações forem surgindo ao longo do tempo.
