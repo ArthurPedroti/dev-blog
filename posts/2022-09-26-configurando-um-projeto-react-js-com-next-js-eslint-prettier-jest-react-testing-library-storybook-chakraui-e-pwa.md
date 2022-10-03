@@ -203,6 +203,7 @@ yarn add --dev @testing-library/jest-dom @testing-library/react @testing-library
 Vamos adicionar os seguintes scripts ao nosso package.json, para rodar os nossos testes:
 
 ```json
+// package.json
 "test": "jest",
 "test:watch": "jest --watch",
 ```
@@ -240,8 +241,6 @@ import '@testing-library/jest-dom/extend-expect'
 O parametro **collectCoverageFrom** indica quais pastas o Jest estará procurando os testes, no exemplo acima, eu coloco os testes dentro das pastas dos componentes e dentro das pastas dos templates, que eu utilizo para construir as minhas páginas, mas fica a seu critério essa configuração.
 
 Se você estiver utilizando a configuração **baseURL** no seu tsconfig, é preciso adicionar uma configuração a mais no seu jest.config.js:
-
-
 
 ```jsx
 // jest.config.js
@@ -383,6 +382,7 @@ export const theme = extendTheme({
 E no _app.tsx, vamos adicionar o contexto do Chakra, que é uma componente que fica por volta da nossa aplicação para fazer o Chakra funcionar, juntamente com o nosso tema, e as fontes que iremos utilizar. Ficando o arquivo da seguinte forma:
 
 ```jsx
+// pages/_app.tsx
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 
@@ -453,6 +453,7 @@ module.exports = {
 E no preview.js vamos adicionar as fontes e a propriedade **chakra** para injetar o nosso tema no Storybook:
 
 ```jsx
+// .storybook/preview.js
 import { theme } from '../src/styles/theme'
 
 import '@fontsource/roboto/400.css'
@@ -512,6 +513,7 @@ yarn add -D plop
 Adicionar o seguinte script ao nosso package.json:
 
 ```json
+// package.json
 "generate": "yarn plop --plopfile generators/plopfile.js",
 ```
 
