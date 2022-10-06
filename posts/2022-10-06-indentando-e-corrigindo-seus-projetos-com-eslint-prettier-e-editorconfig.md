@@ -1,6 +1,6 @@
 ---
 title: Indentando e corrigindo seus projetos com ESLint, Prettier e EditorConfig
-description: Com configurar as ferramentas ESLint, Prettier e EditorConfig em
+description: Como configurar as ferramentas ESLint, Prettier e EditorConfig em
   seus projetos Javascript e Typescript, tanto no frontend (React.js), quanto no
   backend (Node.js)
 date: 2022-10-06 08:16:23
