@@ -10,7 +10,9 @@ background: "#D6BA32"
 ---
 ## Introdução
 
-Ao inicializar um projeto, eu sempre gosto de usar algumas ferramentas para me ajudar a indentar, ajustar e corrigir o meu código, e normalmente eu esqueço todo o passo de passo de como configurar essas ferramentas no meu projeto, e tenho que ficar consultando os projetos antigos e documentações. Então escrevi esse passo a passo com todos os detalhes de como instalar de forma simples e rápida o ESLint, Prettier e EditorConfig em um projeto React.js e Node.js, tanto em  Javascript quanto em Typescript.
+Ter ferramentas para te ajudar  a indentar e corrigir o meu código são fundamentais para acelerar e evitar erros no seu desenvolvimento, nesse post eu escrevi esse passo a passo com todos os detalhes de como instalar de forma simples e rápida o ESLint, Prettier e EditorConfig em qualquer projeto React.js e Node.js, tanto em  Javascript quanto em Typescript.
+
+Não vai deixar de conferir, né? Então dá uma olhada abaixo para o post na íntegra👇
 
 ## Pré-requisitos
 
