@@ -560,15 +560,13 @@ module.exports = (plop) => {
 // Component.tsx.hbs
 import { Heading } from '@chakra-ui/react'
 
-const {{pascalCase name}} = () => <Heading>{{pascalCase name}}</Heading>
-
-export default {{pascalCase name}}
+export const {{pascalCase name}} = () => <Heading>{{pascalCase name}}</Heading>
 ```
 
 ```jsx
 // stories.tsx.hbs
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import {{pascalCase name}} from '.'
+import { {{pascalCase name}} } from '.'
 
 export default {
   title: '{{pascalCase name}}',
@@ -582,7 +580,7 @@ export const Default: ComponentStory<typeof {{pascalCase name}}> = () => <{{pasc
 // test.tsx.hbs
 import { render, screen } from '@testing-library/react'
 
-import {{pascalCase name}} from '.'
+import { {{pascalCase name}} } from '.'
 
 describe('<{{pascalCase name}} />', () => {
   it('should render the heading', () => {
@@ -626,28 +624,11 @@ Mas você também pode deixar isso previamente configurado por padrão nas confi
 ```jsx
 // settings.json (VsCode)
 
-//Padronização do Eslint
-    "[javascript]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      }
-    },
-    "[javascriptreact]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      }
-    },
-    "[typescript]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      }
-    },
-    "[typescriptreact]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-      },
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+//AutoLint on Save from Eslint
+"editor.formatOnSave": false,
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
+},
 ```
 
 ## Conclusão
