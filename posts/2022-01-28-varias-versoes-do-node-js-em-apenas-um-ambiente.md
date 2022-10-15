@@ -76,7 +76,11 @@ Dessa forma, ao executar o comando “nvm use”, ele vai automaticamente detect
 
 Isso facilita bastante no ambiente de desenvolvimento, para não ter que ficar consultando o projeto ou outras pessoas para saber em qual a versão do node aquele projeto está sendo desenvolvido. Basta apenas rodar o comando do nvm, e você já vai estar rodando a versão correta do node. Você só terá que implementar a cultura de sempre criar o arquivo “.nvmrc” em todos os projetos.
 
+
+
 ## Definindo uma versão padrão do node
+
+
 
 Uma das coisas que podem fazer você ficar com um pouco de raiva no nvm, é o fato de que toda vez que você abre um novo shell, ele abre como se não tivesse o node, e você precisa digitar o comando do nvm para ativar o node.
 
@@ -87,6 +91,12 @@ nvm alias default node
 ```
 
 Pronto, agora toda vez que você abrir um novo shell, o node já vai rodar com essa versão padrão.
+Você pode também listar todas as versões do nvm no seu ambiente com o comando `nvm list`, e escolher uma específica para ser a default:
+
+```jsx
+nvm alias default 16.17.0
+```
+
 
 ## Em produção
 
