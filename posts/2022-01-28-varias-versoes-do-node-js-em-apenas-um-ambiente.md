@@ -91,7 +91,7 @@ nvm alias default node
 ```
 
 Pronto, agora toda vez que você abrir um novo shell, o node já vai rodar com essa versão padrão.
-Você pode também listar todas as versões do nvm no seu ambiente com o comando `nvm list`, e escolher uma específica para ser a default:
+Você pode também listar todas as versões do node no seu ambiente com o comando `nvm list`, e escolher uma específica para ser a default:
 
 ```jsx
 nvm alias default 16.17.0
