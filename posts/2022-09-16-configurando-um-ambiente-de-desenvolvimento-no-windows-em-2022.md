@@ -195,7 +195,7 @@ E alterar uma das configurações do nosso arquivo **.zshrc**, localizado na nos
 ZSH_THEME="spaceship"
 ```
 
-Esse tema mostra várias informações no terminal, mas eu prefiro fazer algumas alterações para visualizar somente as informações que eu julgo necessário, para isso, é só ir até o final do seu arquivo **.zshrc** e adicionar as seguinte linhas, conforme as suas preferencias:
+Esse tema mostra várias informações no terminal, mas eu prefiro fazer algumas alterações para visualizar somente as informações que eu julgo necessário, para isso, é só ir até o final do seu arquivo **.zshrc** e adicionar as seguintes linhas, conforme as suas preferencias:
 
 ```jsx
 ### Spaceship theme configs
