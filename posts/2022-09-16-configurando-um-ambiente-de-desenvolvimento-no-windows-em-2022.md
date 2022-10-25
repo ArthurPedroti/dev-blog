@@ -188,7 +188,7 @@ Criar um link simbólico:
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-E alterar uma das configurações do nosso arquivo **.zshrc**, localizado na nossa home, da seguinte forma:
+E alterar uma das configurações do nosso arquivo **.zshrc**, localizado na nossa home(~), da seguinte forma:
 
 ```jsx
 // .zshrc
@@ -196,8 +196,6 @@ ZSH_THEME="spaceship"
 ```
 
 Esse tema mostra várias informações no terminal, mas eu prefiro fazer algumas alterações para visualizar somente as informações que eu julgo necessário, para isso, é só ir até o final do seu arquivo **.zshrc** e adicionar as seguinte linhas, conforme as suas preferencias:
-
-- - -
 
 ```jsx
 ### Spaceship theme configs
@@ -225,7 +223,7 @@ Agora reinicie o terminal para aplicar as configurações.
 
 ## 11º - Plugins do Zsh
 
-Agora iremos adicionar alguns plugins para facilitar a nossa vida ao utilizar o terminal, e para isso, primeiramente vamos instalar o **Zinit**, \*\*\*\*que facilita na instalação e remoção desses plugins:
+Agora iremos adicionar alguns plugins para facilitar a nossa vida ao utilizar o terminal, e para isso, primeiramente vamos instalar o **Zinit**, que facilita na instalação e remoção desses plugins:
 
 ```jsx
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
