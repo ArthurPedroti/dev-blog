@@ -94,7 +94,7 @@ Entre na Microsoft Store, e instale o “Windows Terminal”, logo após, abra o
 
 ## 5º Ajustando o diretorio inicial
 
-Caso ao iniciar o seu terminal no ubuntu, o diretório inicial não for o “~”, que é o diretório padrão do seu usuário, siga os passo abaixo. Porém atualmente o terminal já está vindo configurado dessa forma previamente.
+Caso ao iniciar o seu terminal no ubuntu, o diretório inicial **não for** o “~”, que é o diretório padrão do seu usuário, siga os passos abaixo. Porém atualmente o terminal já está vindo configurado dessa forma previamente, e nesse caso você pode pular para o passo seguinte.
 
 Abra novamente o terminal e rode o comando “cd” para navegar até o diretório inicial, após isso rode o comando:
 
