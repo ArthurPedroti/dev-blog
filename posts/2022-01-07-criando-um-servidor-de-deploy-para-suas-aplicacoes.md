@@ -106,7 +106,7 @@ Agora iremos instalar o PM2 para gerenciar os serviços, como o que acabamos de 
 Para instalar utilizaremos o npm, execute o comando:
 
 ```bash
-sudo npm install pm2@latest -g
+npm install pm2@latest -g
 ```
 
 E agora iremos executar o serviço do node que acabamos de criar pelo PM2:
@@ -117,7 +117,7 @@ pm2 start hello.js
 
 Você pode consultar os serviços que estão rodando pelo comand `pm2 list`
 
-![Imagem da tabela que mostra os serviços no PM2](assets/img/deploy03.png "\\"pm2 list\\" output")
+![Imagem da tabela que mostra os serviços no PM2](assets/img/deploy03.png "\\\"pm2 list\\\" output")
 
 Como você pode ver, ele assumiu o nome do nosso arquivo como o nome de serviço, e agora ele já está gerenciando esse serviço, e mesmo que a aplicação tenha algum crash, ele já vai automaticamente reiniciar para você.
 
