@@ -43,7 +43,7 @@ console.log(result);
 // [2, 3, 4, 5, 6]
 ```
 
-# Implementando a função ****map no JavaScript
+# Implementando a função map no JavaScript
 
 A melhor maneira de realmente entender como funciona a função map do javascript é implementando ela você mesmo, ou seja, fazendo a sua própria função map. Isso lhe dará uma compreensão profunda da funcionalidade e dos conceitos por trás dessa função.
 
