@@ -1,10 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import * as S from './styles'
 
 const BuyMeACoffee = () => (
   <S.Wrapper>
     <h3>
-      Me compre um café{' '}
+      Buy Me a Coffee{' '}
       <img
         src="https://storage.ko-fi.com/cdn/cup-border.png"
         alt="Ko-fi donations"
@@ -12,17 +13,18 @@ const BuyMeACoffee = () => (
       />
     </h3>
     <p>
-      E como um bom programador, eu sei que você adora um cafézinho! Então por
-      que você não me ajuda e me dá um cafézinho também?💙
+      As a good programmer, I know you love a little coffee! So why don't you
+      help me have a coffee while I produce this content for the whole
+      community?💙
     </p>
     <p>
-      Com apenas R$5,00 reais você me ajudar, e <strong>principalmente</strong>,
-      continuar me incentivando a trazer mais conteúdos totalmente gratuitos
-      para toda a comunidade, basta apenas clicar no link abaixo, conto com a
-      sua colaboração😉
+      With just $3.00, you can help me, and <strong>more importantly</strong>,
+      continue to encourage me to bring more completely free content to the
+      whole community. You just need to click on the link below, I'm counting on
+      your contribution 😉.
     </p>
     <a
-      title="Me compre um café"
+      title="Buy Me a Coffee"
       className="kofi-button"
       style={{
         'background-color': 'var(--borders)'
@@ -32,7 +34,7 @@ const BuyMeACoffee = () => (
       rel="noreferrer"
     >
       <span className="kofitext">
-        Me compre um café{' '}
+        Buy Me a Coffee{' '}
         <img
           src="https://storage.ko-fi.com/cdn/cup-border.png"
           alt="Ko-fi donations"

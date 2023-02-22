@@ -12,7 +12,7 @@ const Sidebar = () => (
 
     <div className="sidebarlinks">
       <a
-        title="Me compre um café"
+        title="Buy Me a Coffee"
         className="kofi-button"
         style={{
           'background-color': 'var(--borders)'
@@ -22,7 +22,7 @@ const Sidebar = () => (
         rel="noreferrer"
       >
         <span className="kofitext">
-          Me compre um café{' '}
+          Buy Me a Coffee{' '}
           <img
             src="https://storage.ko-fi.com/cdn/cup-border.png"
             alt="Ko-fi donations"
@@ -31,7 +31,7 @@ const Sidebar = () => (
         </span>
       </a>
       <a
-        title="Inscrever-se"
+        title="Subscribe"
         className="kofi-button"
         style={{
           'background-color': 'var(--borders)'
@@ -41,7 +41,7 @@ const Sidebar = () => (
         rel="noreferrer"
       >
         <span className="kofitext">
-          Inscrever-se!{' '}
+          Subscribe!{' '}
           <img
             src="https://storage.ko-fi.com/cdn/cup-border.png"
             alt="Ko-fi donations"

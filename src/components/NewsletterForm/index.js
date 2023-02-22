@@ -1,16 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import * as S from './styles'
 
 const NewsletterForm = () => (
   <S.Wrapper>
-    <h3>Assine o nosso Newsletter!</h3>
+    <h3>Subscribe to our Newsletter!</h3>
     <p>
-      Ao assinar o nosso newsletter, você será avisado toda a vez que surgir um
-      novo post, não perca essa oportunidade e fique por dentro de todas as
-      novidades!
+      By subscribing to our newsletter, you will be notified every time a new
+      post appears. Don't miss this opportunity and stay up-to-date with all the
+      news!
     </p>
     <a
-      title="Inscrever-se"
+      title="Subscribe"
       className="news-button"
       style={{
         'background-color': 'var(--borders)'
@@ -20,7 +21,7 @@ const NewsletterForm = () => (
       rel="noreferrer"
     >
       <span className="newstext">
-        Inscrever-se!{' '}
+        Subscribe!{' '}
         <img
           src="https://storage.ko-fi.com/cdn/cup-border.png"
           alt="Ko-fi donations"

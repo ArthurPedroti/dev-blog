@@ -4,78 +4,64 @@ import * as S from '../../components/Post/styles'
 const About = () => (
   <>
     <S.PostHeader>
-      <S.PostTitle>Sobre mim</S.PostTitle>
+      <S.PostTitle>About me</S.PostTitle>
       <S.PostDescription>Arthur Totola Pedroti</S.PostDescription>
     </S.PostHeader>
     <S.MainContent>
       <p>
-        Com 20 anos comecei a trabalhar no setor de engenharia, passei por
-        cargos de PCP, logística, materiais, almoxarifado, importação e
-        exportação, e no meio disso tudo, também assumi as responsabilidades de
-        TI, e comecei a ter contato com o desenvolvimento de projetos e
-        programação, na empresa em que trabalho.
+        I am the Head of Technology, a programming article writer, and actively
+        involved in the Open Source community. I have 4 years of experience in
+        the technology field, but I have also worked in the supply chain, import
+        and export areas.
       </p>
-      <p>
-        Com isso, me tornei autodidata e me apaixonei pelo mundo da tecnologia e
-        do desenvolvimento, pela comunidade Open Source, e pelo tanto de
-        inovação e evolução continua, que envolve o mundo da tecnologia.
-      </p>
-      <p>
-        Agora estou totalmente focado em liderar e atuar nos projetos de
-        desenvolvimento da empresa em que atuo. Me vejo aprimorando cada vez
-        mais meus conhecimentos técnicos, de liderança e gestão, e pronto para
-        conseguir impactar cada vez mais vidas utilizando a tecnologia e
-        programação.
-      </p>
-      <h4>Habilidades Técnicas:</h4>
+      <h4>My experience below:👇</h4>
       <ul>
-        <li>Typescript</li>
-        <li>React.JS</li>
-        <li>Next.JS</li>
-        <li>Redux</li>
-        <li>SWR</li>
-        <li>Bootstrap</li>
-        <li>Material UI</li>
-        <li>Storybook</li>
-        <li>Node.JS</li>
-        <li>TypeORM</li>
-        <li>Express</li>
-        <li>Stripe</li>
-        <li>Strapi</li>
-        <li>GraphQL</li>
-        <li>Jest | React Testing Library</li>
-        <li>React Native</li>
-        <li>One Signal | Push Notifications</li>
-        <li>APIs Restful</li>
-        <li>Git</li>
-        <li>CI | CD | App Center | Github Actions</li>
-        <li>Metodologia Agil | Kanban | Scrum | Github Projects</li>
-        <li>Prettier | ESLint</li>
-        <li>AWS | Digital Ocean | Heroku | Netlify</li>
-        <li>SQL Server | PostgreSQL | MongoDB | FaunaDB | Redis</li>
-        <li>HTML5 | CSS3</li>
-        <li>Protheus | TOTVS</li>
-        <li>PfSense | VMware</li>
-        <li>Linux | Ubuntu | Ubuntu Server | WSL | Windows Server</li>
-        <li>HTML5 | CSS3</li>
-        <li>Wordpress | Cpanel</li>
-        <li>Power BI</li>
-        <li>VoIP | PABX</li>
+        <li>
+          Open Source contributions: Material UI (Google), Next.js (Vercel),
+          Chakra UI, NextAuth, Axios, Strapi, DefinitelyTyped
+          (Typescript/Microsoft), React Table/Query (TanStack)
+        </li>
+        <li>
+          +4 years: React.js, Node.js (Express), Javascript, SQL (Postgres, SQL
+          Server), Git, APIs (Rest)
+        </li>
+        <li>
+          +3 years: Typescript, Docker, Node.js (TypeORM, TSringe), Automated
+          Testing / TDD (Jest), Code Styling and Standardization (ESLint,
+          Prettier), CI/CD (Nginx, Github Actions, PM2), Agile Methodologies
+          (Kanban), Design Systems (Material UI), Linux (Ubuntu, WSL)
+        </li>
+        <li>
+          +2 years: React.js (Next.js), Design Systems (Storybook, Chakra UI,
+          Styled Components, Bootstrap), Automated Testing / TDD (React Testing
+          Library), Strapi, Cloud (AWS S3, EC2, Digital Ocean, Heroku, Netlify),
+          Power Bi, Excel, Monitoring (Sentry), Agile Methodologies (Scrum)
+        </li>
+        <li>
+          +1 year: Messaging/IoT (MQTT, RabbitMQ, Mosquitto), GraphQL, NoSQL
+          (MongoDB), Cache (Redis), Mobile (React Native, PWA), Notifications
+          (OneSignal), App Store (Google Play, App Center), State Management
+          (Redux, Redux-Form, Redux-Persist, Redux-Thunk, Redux-Sauce), Payments
+          (Stripe)
+        </li>
       </ul>
-      <h4>Ferramentas:</h4>
+
+      <h4>Soft Skills:</h4>
       <ul>
-        <li>Visual Studio Code</li>
-        <li>Figma</li>
-        <li>Github</li>
-        <li>WSL</li>
+        <li>Self-taught</li>
+        <li>Process and data organization and analysis</li>
+        <li>Management and leadership</li>
       </ul>
-      <h4>Aliados a algumas qualidades pessoais:</h4>
+      <h4>Others:</h4>
       <ul>
-        <li>Autodidata</li>
-        <li>Experiência em receber e dar feedbacks</li>
-        <li>Organização e processos</li>
-        <li>Gerenciamento e liderança</li>
-        <li>Ser um bom ouvinte</li>
+        <li>
+          +4 years: Firewall (Pfsense), Networking and cabling, ERP (Protheus),
+          Excel
+        </li>
+        <li>
+          +3 years: Wordpress, Cpanel, Power Bi, DNS, Windows Server, VMware
+        </li>
+        <li>+2 years: VoIP, PABX, VBA (Excel)</li>
       </ul>
     </S.MainContent>
   </>
