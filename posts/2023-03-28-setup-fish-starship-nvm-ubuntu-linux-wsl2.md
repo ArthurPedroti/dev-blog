@@ -8,7 +8,7 @@ background: "#637a91"
 ---
 ## Introduction
 
-These days I tried to use Fish as my default shell on my WSL2, I suffered a little to discover the details and how to make everything works together, so I wrote this tutorial to help any other folks who are on this same journey.
+These days I tried to use Fish as my default shell on WSL2, I suffered a little to discover the details and how to make everything works together, so I wrote this tutorial to help any other folks who are on this same journey.
 
 ## Fish install
 
@@ -56,10 +56,7 @@ Now run the following command to change the default shell to fish:
 chsh -s /usr/local/bin/fish
 ```
 
-<aside>
-💡 \*\*Important note:\*\* Check if you don't do anything wrong so far, because if you run the command to change the shell, and if you have any warning messages, open another terminal without closing this one you just ran the command, and test if it's everything ok. If we have a problem, run the command substituting the path to /bin/bash or your previous bash and consulting better the fish docs to understand the problem.
-
-</aside>
+> 💡 Important note: Check if you don't do anything wrong so far, because if you run the command to change the shell, and if you have any warning messages, open another terminal without closing this one you just ran the command, and test if it's everything ok. If we have a problem, run the command substituting the path to /bin/bash or your previous bash and consulting better the fish docs to understand the problem.
 
 docs: [Introduction — fish-shell 3.6.1 documentation (fishshell.com)](https://fishshell.com/docs/current/)
 
