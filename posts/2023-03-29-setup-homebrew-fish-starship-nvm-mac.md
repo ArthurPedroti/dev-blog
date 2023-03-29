@@ -13,7 +13,7 @@ These days I needed to configure my new Mac and I tried to use Fish as my defaul
 
 ## Brew install
 
-If you are on first use of your Mac, update your mac to the last version (don't update may cause issues on your Homebrew installation, updating solved it for me). Or you can type any command like “git”, not to install git, but to Mac automatically install command line developer tools, this is will ensure you can properly install homebrew.
+If you are on first use of your Mac, update your mac to the last version (don't update may cause issues on your Homebrew installation, updating solved it for me). Or you can type any command like “git” on terminal, not to install git, but to Mac automatically install command line developer tools, this is will ensure you can properly install homebrew.
 
 Run this command:
 
@@ -118,6 +118,8 @@ But to do some other nvm default configs, you will need to check the docs, for e
 ```bash
 set --universal nvm_default_version v18.4.0
 ```
+
+docs: https://github.com/jorgebucaran/nvm.fish
 
 ## Using the NVM default installation
 
