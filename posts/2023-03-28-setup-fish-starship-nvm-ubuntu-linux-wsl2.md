@@ -104,6 +104,8 @@ But to do some other nvm default configs, you will need to check the docs, for e
 set --universal nvm_default_version v18.4.0
 ```
 
+docs: https://github.com/jorgebucaran/nvm.fish
+
 ## Using the NVM default installation
 
 The other option is to install the NVM as the default installation:
