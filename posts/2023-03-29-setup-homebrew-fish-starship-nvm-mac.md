@@ -4,8 +4,8 @@ description: A step-by-step about how install and config Homebrew + Fish +
   Starship + NVM on Mac
 date: 2023-03-29 02:22:49
 image: assets/img/setup-homebrew-fish-starship-nvm-mac-.png
-category: misc
-background: "#7AAB13"
+category: mac
+background: "#df4382 "
 ---
 ## Introduction
 
