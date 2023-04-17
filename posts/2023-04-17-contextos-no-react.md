@@ -6,7 +6,7 @@ image: assets/img/contextos-no-react.png
 category: react
 background: "#61dafb"
 ---
-## **Introdução**
+## Introdução
 
 E aí pessoal, hoje vamos entender de uma maneira simples como podemos usar a API de Contexto do React. Há alguns anos, à medida que a complexidade das aplicações React aumentava, os desenvolvedores perceberam a necessidade de criar uma maneira melhor de compartilhar estados e funções no React, em vez de usar parâmetros e mais parâmetros, causando problemas como *prop drilling*.
 
@@ -18,7 +18,7 @@ Então, vamos construir um exemplo simples, mas completo, para entender o poder 
 
 Versão no YouTube: [Um simples exemplo de como usar a API de contexto do React - YouTube](https://www.youtube.com/watch?v=Kq_8b5hTfhI)
 
-## **Criando seu primeiro Contexto**
+## Criando seu primeiro Contexto
 
 Criar um contexto no React é simples assim:
 
