@@ -15,6 +15,8 @@ At that time, developers needed to create many libraries to work around this pro
 But after that, the React team itself started to develop its own React tools to handle state management and sharing in React, and the React Context API was born.
 
 So let’s build a simple but complete example to understand the power of contexts, and how they share everything you want with your React components and pages.
+Youtube Version: [A simple example of how to use React's Context API - YouTube](https://www.youtube.com/watch?v=o0O3MRKzotg)
+
 
 ## Creating your first Context
 
