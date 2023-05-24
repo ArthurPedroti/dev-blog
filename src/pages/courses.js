@@ -6,7 +6,7 @@ import Seo from '../components/seo'
 
 const CoursesPage = () => (
   <Layout>
-    <Seo title="Cursos" />
+    <Seo title="Livros e Cursos" />
     <Courses />
   </Layout>
 )

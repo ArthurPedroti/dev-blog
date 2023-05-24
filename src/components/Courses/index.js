@@ -1,16 +1,21 @@
 import React from 'react'
 import * as S from './styles'
-import PostItem from '../../components/PostItem'
 import getThemeColor from '../../utils/getThemeColor'
 import * as P from '../../components/Post/styles'
 
-const categoriesWithContrastColor = ['react', 'js']
-
 const Courses = () => (
   <>
-    <P.PostHeader>
-      <P.PostTitle>Books and Courses</P.PostTitle>
-      <P.PostDescription>A list of all my books and courses</P.PostDescription>
+    <P.PostHeader
+      style={{
+        borderBottom: '1px solid var(--borders)',
+        paddingBottom: '48px'
+      }}
+    >
+      <P.PostTitle>Livros e Cursos</P.PostTitle>
+      <P.PostDescription>
+        Uma lista de todos os meus livros e cursos com 10% de desconto! (Use o
+        cupom <strong>BLOG</strong>)
+      </P.PostDescription>
     </P.PostHeader>
     {/* <P.MainContent> */}
     <S.PostItemLink
@@ -18,16 +23,15 @@ const Courses = () => (
       direction="right"
       bg={getThemeColor()}
       duration={0.6}
-      to="test"
+      target="_blank"
+      href="https://cursos.arthurpedroti.com.br/melhores-linhas/"
     >
       <S.PostItemWrapper>
         <S.PostItemTag
-          textColor={
-            categoriesWithContrastColor.includes('yellow') ? '#333' : null
-          }
-          background="yellow"
+          textColor={'var(--background)'}
+          background={'var(--frost-cian)'}
         >
-          JS
+          E-book
         </S.PostItemTag>
         <S.PostItemInfo>
           <S.PostItemTitle>
@@ -39,16 +43,30 @@ const Courses = () => (
         </S.PostItemInfo>
       </S.PostItemWrapper>
     </S.PostItemLink>
-    {/* <PostItem
-        // key={title}
-        // slug={slug}
-        // background={background}
-        // category={category}
-        // date={date}
-        // timeToRead={timeToRead}
-        title="Como escrever as melhores linhas do seu currículo"
-        description="Aprenda a como começar no mundo Open Source"
-      /> */}
+    {/* <S.PostItemLink
+      cover
+      direction="right"
+      bg={getThemeColor()}
+      duration={0.6}
+      target="_blank"
+      href="https://cursos.arthurpedroti.com.br/melhores-linhas/"
+    >
+      <S.PostItemWrapper>
+        <S.PostItemTag
+          textColor={'var(--background)'}
+          background={'var(--green)'}
+        >
+          Curso
+        </S.PostItemTag>
+        <S.PostItemInfo>
+          <S.PostItemTitle>Open Source na Prática</S.PostItemTitle>
+          <S.PostItemDescription>
+            Aprenda todas as formas de contribuir com um passo a passo detalhado
+            de como contribuir para o mundo Open Source
+          </S.PostItemDescription>
+        </S.PostItemInfo>
+      </S.PostItemWrapper>
+    </S.PostItemLink> */}
     {/* </P.MainContent> */}
   </>
 )

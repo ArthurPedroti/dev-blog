@@ -33,6 +33,10 @@ export const PostDescription = styled.h2`
     line-height: 1.3;
     padding: 0 1rem;
   `}
+
+  strong {
+    color: var(--highlight);
+  }
 `
 
 export const PostDate = styled.p`

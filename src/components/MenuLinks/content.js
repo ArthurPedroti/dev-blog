@@ -8,8 +8,9 @@ const links = [
     url: '/about/'
   },
   {
-    label: 'Books and Courses',
-    url: '/courses/'
+    label: 'Livros e Cursos',
+    url: '/courses/',
+    highlight: true
   }
 ]
 
