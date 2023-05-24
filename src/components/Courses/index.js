@@ -35,7 +35,7 @@ const Courses = () => (
         </S.PostItemTag>
         <S.PostItemInfo>
           <S.PostItemTitle>
-            Como escrever as melhores linhas do seu currículo
+            Como escrever as Melhores Linhas do seu Currículo (para devs)
           </S.PostItemTitle>
           <S.PostItemDescription>
             Aprenda a dar os primeiros passos no mundo Open Source
