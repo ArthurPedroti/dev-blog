@@ -24,11 +24,13 @@ const PostItem = ({
       to={slug}
     >
       <S.PostItemWrapper>
-        <S.PostItemTag 
-          textColor={categoriesWithContrastColor.includes(category) ? '#333' : null} 
+        <S.PostItemTag
+          textColor={
+            categoriesWithContrastColor.includes(category) ? '#333' : null
+          }
           background={background}
         >
-            {category}
+          {category}
         </S.PostItemTag>
         <S.PostItemInfo>
           <S.PostItemDate>
