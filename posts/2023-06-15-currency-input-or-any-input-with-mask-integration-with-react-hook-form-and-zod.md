@@ -364,7 +364,7 @@ Now, with the API of react-hook-forma, we can pass these two types in your **use
 
 `FormProviderProps<TFieldValues, TContext, TTransformedValues>`
 
-TContext if by default **any**, so we will maintain the same.
+TContext by default is **any**, so we will maintain the same.
 
 Another handy little trick is to use the **Intl.NumberFormat** to turn our transformed number back into a string:
 
