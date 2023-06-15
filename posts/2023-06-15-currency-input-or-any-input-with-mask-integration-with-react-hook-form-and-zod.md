@@ -40,7 +40,7 @@ So far nothing new, it’s very simple to use the react-number-format, and you c
 
 We cannot directly integrate with react hook form, we need to use the Controller component.
 
-Typically, you use the Controller component passing the “field” spread to the input
+Typically, you use the Controller component passing the “field” spread to the input:
 
 ```jsx
 import { useForm, Controller } from "react-hook-form";
