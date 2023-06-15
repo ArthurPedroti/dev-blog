@@ -7,12 +7,6 @@ image: assets/img/currency-input-or-any-input-with-mask-integration-with-react-h
 category: react
 background: "#61dafb"
 ---
-# Currency Input (or any Input with Mask) integration with React Hook Form and Zod
-
-How to properly integrate these libraries and their limitations
-
-*Texto e ortografia revisados: 14/06/2023*
-
 ## Introduction
 
 This article aims to show how can you create a Currency Input, or any input you want using masks, commenting about the particularities and details that you must attend to for the correct functioning of all libraries.
@@ -46,7 +40,7 @@ So far nothing new, it’s very simple to use the react-number-format, and you c
 
 We cannot directly integrate with react hook form, we need to use the Controller component.
 
-Typically, you use the Controller component passing the “field” spread to the input
+Typically, you use the Controller component passing the “field” spread to the input:
 
 ```jsx
 import { useForm, Controller } from "react-hook-form";
@@ -189,7 +183,7 @@ const {
 })
 ```
 
-You may think to use Zod to transform/coerce the string into a number using a function to remove the extra characters, but when you do, you will think it’s working:
+You may think to use Zod to transform/coerce the string into a number using a function to remove the extra characters, but when you do, you'll just find it working:
 
 ```jsx
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -370,7 +364,7 @@ Now, with the API of react-hook-forma, we can pass these two types in your **use
 
 `FormProviderProps<TFieldValues, TContext, TTransformedValues>`
 
-TContext if by default **any**, so we will maintain the same.
+TContext by default is **any**, so we will maintain the same.
 
 Another handy little trick is to use the **Intl.NumberFormat** to turn our transformed number back into a string:
 
