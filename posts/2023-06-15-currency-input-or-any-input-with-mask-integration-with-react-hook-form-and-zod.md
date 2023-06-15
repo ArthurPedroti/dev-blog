@@ -183,7 +183,7 @@ const {
 })
 ```
 
-You may think to use Zod to transform/coerce the string into a number using a function to remove the extra characters, but when you do, you will think it’s working:
+You may think to use Zod to transform/coerce the string into a number using a function to remove the extra characters, but when you do, you'll just find it working:
 
 ```jsx
 import { zodResolver } from '@hookform/resolvers/zod'
