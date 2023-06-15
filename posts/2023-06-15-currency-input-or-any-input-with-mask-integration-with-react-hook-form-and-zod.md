@@ -7,12 +7,6 @@ image: assets/img/currency-input-or-any-input-with-mask-integration-with-react-h
 category: react
 background: "#61dafb"
 ---
-# Currency Input (or any Input with Mask) integration with React Hook Form and Zod
-
-How to properly integrate these libraries and their limitations
-
-*Texto e ortografia revisados: 14/06/2023*
-
 ## Introduction
 
 This article aims to show how can you create a Currency Input, or any input you want using masks, commenting about the particularities and details that you must attend to for the correct functioning of all libraries.
