@@ -7,13 +7,13 @@ image: assets/img/integracao-de-um-input-de-moeda-ou-qualquer-input-com-mascara-
 category: react
 background: "#61dafb"
 ---
-## **Introdução**
+## Introdução
 
 Este artigo tem como objetivo mostrar como você pode criar um input de moeda, ou qualquer outro input que você queira usando máscaras, comentando sobre as particularidades e detalhes que você deve prestar atenção para o funcionamento correto de todas as bibliotecas.
 
 Para este exemplo, estou usando o React Number Format para o input com máscara, o React Hook Form para a construção e lógica do formulário, e o Zod para a validação.
 
-## **Criando o Input de Moeda**
+## Criando o Input de Moeda
 
 Neste primeiro momento, apenas criamos o input usando a biblioteca React Number Format, assim:
 
@@ -36,7 +36,7 @@ export default DolarInput
 
 Até agora, nada de novo. É muito simples usar o react-number-format, e você pode consultar a documentação para obter mais possibilidades.
 
-## **Integrando com o React Hook Form**
+## Integrando com o React Hook Form
 
 Não é possível integrar diretamente com o React Hook Form, é necessário usar o componente Controller.
 
@@ -114,7 +114,7 @@ export default DolarInput
 
 ![Console log do submit do input](assets/img/02.png "Console log do submit do input")
 
-## **Integração com o Zod**
+## Integração com o Zod
 
 A abordagem normal é a seguinte e não tem observações:
 
@@ -269,7 +269,7 @@ Enviar após a primeira renderização:
 
 Portanto, sugerimos que você não tente transformar o valor se quiser trabalhar com valores padrão. É melhor lidar com os dados antes e depois do React Hook Form e do Zod, para evitar erros nessas transformações e transformações reversas.
 
-## \***\*Criando um input de moeda personalizado\****
+## Criando um input de moeda personalizado
 
 Por fim, você pode abstrair os parâmetros e o componente Controller em um novo componente e personalizá-lo como desejar:
 
@@ -346,7 +346,7 @@ const Form = () => {
 export default Form
 ```
 
-## **Melhorando a integração do React Hook Form (v7.44.0) com Zod e valores transformados/coagidos**
+## Melhorando a integração do React Hook Form (v7.44.0) com Zod e valores transformados/coagidos
 
 Há três semanas, o react-hook-form lançou uma nova versão (v7.44.0) com a possibilidade de usar dois tipos diferentes em seu formulário, um para entrada de dados e outro para saída.
 
@@ -446,7 +446,7 @@ const Form = () => {
 export default Form
 ```
 
-## **Conclusão**
+## Conclusão
 
 Espero que este artigo seja útil para você. Foi necessário investir algum tempo para entender a maneira correta de usar o react-number-format com o react-hook-form, porque o exemplo que temos na documentação do react-hook-form não removeu a ref das props do campo e causou alguns erros, e também precisamos entender as limitações da integração do Zod com o react-hook-form. Mas, como mostramos, agora temos um novo recurso para nos ajudar e podemos usar as transformações nativas do Zod.
 
