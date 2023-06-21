@@ -473,27 +473,6 @@ The lifecycle hooks allow us to trigger functions when certain Strapi queries ar
 
 To implement this, we need to create a file named **lifecycles** inside the API folder of your project.
 
-```
-// ./src/api/test/content-types/test/lifecycles.ts
-
-export default {
-  async beforeDelete(ctx) {
-    console.log('oi')
-    const entry = await strapi.db
-      .query('api::test.test')
-      .findOne({ ...ctx.params, populate: { files: true } })
-    console.log(entry)
-
-    const files = entry.files.map((file) => file)
-
-    // Delete the files from the upload plugin (including provider-specific logic)
-    await Promise.all(
-      files.map((file) => strapi.plugins['upload'].services.upload.remove(file))
-    )
-  }
-}
-```
-
 ```tsx
 // ./src/api/test/content-types/test/lifecycles.ts
 
@@ -515,9 +494,12 @@ export default {
 
     const files = entry.files.map((file) => file)
 
-    // Delete the files from the upload plugin (including provider-specific logic)
+  // Delete the files from the upload plugin (including provider-specific logic)
+	if (entry.files) {
     await Promise.all(
-      files.map((file) => strapi.plugins['upload'].services.upload.remove(file))
+      entry.files.map((file) =>
+        strapi.plugins['upload'].services.upload.remove(file)
+      )
     )
   }
 }
@@ -534,11 +516,13 @@ export default {
       .query('api::test.test')
       .findOne({ ...ctx.params, populate: { files: true } })
 
-    const files = entry.files
-
-    await Promise.all(
-      files.map((file) => strapi.plugins['upload'].services.upload.remove(file))
-    )
+    if (entry.files) {
+      await Promise.all(
+        entry.files.map((file) =>
+          strapi.plugins['upload'].services.upload.remove(file)
+        )
+      )
+    }
   },
   async beforeDeleteMany(ctx) {
     const entries = await strapi.db
@@ -547,12 +531,13 @@ export default {
 
     await Promise.all(
       entries.map(async (entry) => {
-        const files = entry.files
-        await Promise.all(
-          files.map(async (file) => {
-            await strapi.plugins['upload'].services.upload.remove(file)
-          })
-        )
+        if (entry.files) {
+          await Promise.all(
+            entry.files.map(async (file) => {
+              await strapi.plugins['upload'].services.upload.remove(file)
+            })
+          )
+        }
       })
     )
   }
