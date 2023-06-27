@@ -21,7 +21,7 @@ npx create-strapi-app backend --quickstart
 
 E crie um content type para os nossos testes:
 
-![Untitled](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-01.png)
+![Tela de Content Type do Strapi](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-01.png "Tela de Content Type do Strapi")
 
 Nada de novo até aqui, apenas criei uma tabela "test" com uma coluna chamada **name** (tipo texto) e **files** (tipo mídia múltipla).
 
@@ -56,7 +56,7 @@ const UploadComponent = () => {
 export default UploadComponent
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ca908cc-ac44-416a-935a-8347fb63fb08/Untitled.png)
+![Enviando o formulário e mostrando o console.log](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-02.png "Enviando o formulário e mostrando o console.log")
 
 ### Manipular o formulário para enviar para o Strapi
 
@@ -123,7 +123,7 @@ const UploadComponent = () => {
 
 Certifique-se de que o acesso público esteja habilitado para as rotas do nosso tipo de conteúdo, caso contrário, você poderá encontrar um erro de acesso proibido.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2dd4b82c-bfc2-4e15-a2b9-41aa37069673/Untitled.png)
+![Permissões de rota do Strapi](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-03.png "Permissões de rota do Strapi")
 
 Para exemplos atualizados em versões mais recentes, consulte a documentação abaixo:
 
@@ -210,7 +210,7 @@ export default ({ env }) => [
 
 Dentro do painel de administração do Strapi, podemos configurar outras boas opções em Settings > Media Library. Dependendo dos requisitos da sua aplicação, você pode optar por habilitar ou desabilitar a geração de outros arquivos e otimizações.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3e03bf2e-3e13-42cc-907e-cea39da7ca04/Untitled.png)
+![Configurações de media do Strapi](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-04.png "Configurações de media do Strapi")
 
 ### Configuração da AWS S3
 
@@ -223,16 +223,16 @@ Siga estas etapas para criar um bucket na S3 e configurar as configurações imp
 3. Crie um novo bucket selecionando o botão "Criar bucket".
 4. Siga as instruções para especificar o nome do bucket, região e outras configurações necessárias, anotando as configurações importantes que precisam ser definidas.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b82cea2-d7a5-4848-b33e-abb33a8362bb/Untitled.png)
+![Habilitando ACLs nas configurações da AWS S3](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-05.png "Habilitando ACLs nas configurações da AWS S3")
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d0bd219b-41cc-41e5-ad1e-68a1ec893f47/Untitled.png)
+![Configurações de bloqueio da S3](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-06.png "Configurações de bloqueio da S3")
 
 Deixe as configurações restantes como padrão e prossiga para a próxima etapa.
 
 1. Selecione o bucket que você acabou de criar.
 2. Navegue até a guia **Permissões**.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/359eeeee-2cf3-45dc-80ce-ac69023d5f47/Untitled.png)
+![Clicando no aba de permissões de usuário da AWS](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-07.png "Clicando no aba de permissões de usuário da AWS")
 
 Atualize a política de CORS da seguinte forma:
 
@@ -248,7 +248,7 @@ Atualize a política de CORS da seguinte forma:
 ]
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42070775-4225-4ab1-9945-244fc7dcdba2/Untitled.png)
+![Configurações de CORS do bucket da S3](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-08.png "Configurações de CORS do bucket da S3")
 
 Você pode permitir ou restringir essa configuração conforme desejar. Basicamente, isso se refere a quais URLs podem obter informações, visualizar e manipular seus arquivos.
 
@@ -266,21 +266,21 @@ Para obter as credenciais necessárias para fazer upload de arquivos, precisamos
 2. Navegue até o serviço IAM.
 3. Selecione **Usuários** e crie um novo usuário.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c376e42-939a-464f-b874-237433626d8c/Untitled.png)
+![Digitando o nome do bucket e clicando em next](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-09.png "Digitando o nome do bucket e clicando em next")
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18f4b8ff-d8a5-4b38-b95e-91aeebf4bef9/Untitled.png)
+![Selecionando as politicas de permissões ao criar um usuário](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-10.png "Selecionando as politicas de permissões ao criar um usuário")
 
 Para as configurações restantes, você pode deixá-las como padrão.
 
 Em seguida, clique no usuário que você acabou de criar e vá para a guia "Credenciais de segurança". A partir daí, você pode criar uma nova chave de acesso.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/540051b5-9c9f-4473-8fc7-847b881a9d68/Untitled.png)
+![Clicando na aba de segurança nas configurações do usuário](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-11.png "Clicando na aba de segurança nas configurações do usuário")
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9b0bc68-9f45-4427-9f55-054078b79eb6/Untitled.png)
+![Clicando no botão "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Clicando no botão \"Create access key\"")
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/45fd4c0e-483a-487e-916b-7ac63bc7a5c2/Untitled.png)
+![Selecionando a opção "Third-party service" ao criar uma access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Selecionando a opção \"Third-party service\" ao criar uma access key")
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/be8c54cf-3756-4a27-9771-b8a06730be78/Untitled.png)
+![Mostrando e salvando a acess key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-14.png "Mostrando e salvando a acess key")
 
 Agora, salve suas chaves e coloque-as nas suas variáveis de ambiente do Strapi:
 
@@ -296,9 +296,9 @@ AWS_ACCESS_SECRET=7iUp8tS78KERAzPS4+JLG+z684EnDKPF3MY5xbyV
 
 Agora podemos testar novamente se o nosso componente de upload está funcionando e se seus arquivos foram salvos no S3:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/08e39210-9e63-4441-808b-8bdba8ee6cb9/Untitled.png)
+![Enviando o formulário e mostrando o console log](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-15.png "Enviando o formulário e mostrando o console log")
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2e904981-d82a-4b95-817f-13c5674201f3/Untitled.png)
+![Mostrando os arquivo na AWS S3](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-16.png "Mostrando os arquivo na AWS S3")
 
 Para obter mais detalhes e documentação atualizada, consulte os artigos abaixo:
 
@@ -459,7 +459,7 @@ const UploadComponent = () => {
 export default UploadComponent
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f8a256cd-96bb-4cc1-8979-d45e75c5b739/Untitled.png)
+![Clicando e baixando o arquivo](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-17.png "Clicando e baixando o arquivo")
 
 ## Deleting your files through Strapi API
 
