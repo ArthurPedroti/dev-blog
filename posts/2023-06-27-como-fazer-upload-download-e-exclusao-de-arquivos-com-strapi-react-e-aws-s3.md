@@ -461,7 +461,7 @@ export default UploadComponent
 
 ![Clicando e baixando o arquivo](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-17.png "Clicando e baixando o arquivo")
 
-## **Excluindo seus arquivos por meio da API do Strapi**
+## Excluindo seus arquivos por meio da API do Strapi
 
 Por padrão, quando você tem um arquivo relacionado a uma entrada no Strapi, quando você exclui a entrada, esses arquivos não são excluídos, como no WordPress.
 
@@ -557,7 +557,7 @@ Ao excluir a entrada, os arquivos associados também devem ser excluídos tanto 
 
 Por favor, certifique-se de usar o endpoint e o ID corretos ao fazer a solicitação da API para excluir a entrada. Além disso, verifique se os arquivos estão sendo excluídos tanto do Strapi quanto do seu bucket no AWS S3 após a exclusão.
 
-## **Conclusão**
+## Conclusão
 
 A única operação de "CRUD" que não abordamos é a atualização de um arquivo. No entanto, essa operação geralmente não oferece uma boa experiência para o usuário, pois os usuários normalmente optam por excluir o arquivo existente e fazer upload de um novo. No entanto, em casos como atualizar um avatar de perfil, pode ser bastante útil. Para isso, talvez seja necessário personalizar o gerenciamento de mídia do Strapi com os lifecycles hooks, mas se você seguir nosso exemplo, isso não será um desafio.
 
