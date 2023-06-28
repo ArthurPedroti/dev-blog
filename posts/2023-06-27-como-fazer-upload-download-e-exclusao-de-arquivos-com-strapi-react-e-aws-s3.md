@@ -276,9 +276,9 @@ Em seguida, clique no usuário que você acabou de criar e vá para a guia "Cred
 
 ![Clicando na aba de segurança nas configurações do usuário](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-11.png "Clicando na aba de segurança nas configurações do usuário")
 
-![Clicando no botão "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Clicando no botão \"Create access key\"")
+![Clicando no botão "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Clicando no botão \\"Create access key\\"")
 
-![Selecionando a opção "Third-party service" ao criar uma access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Selecionando a opção \"Third-party service\" ao criar uma access key")
+![Selecionando a opção "Third-party service" ao criar uma access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Selecionando a opção \\"Third-party service\\" ao criar uma access key")
 
 ![Mostrando e salvando a acess key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-14.png "Mostrando e salvando a acess key")
 
@@ -292,7 +292,7 @@ AWS_ACCESS_KEY_ID=AKIAQLQTDKCCUCAB6RZE
 AWS_ACCESS_SECRET=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
 ```
 
-### **Testando o upload**
+### Testando o upload
 
 Agora podemos testar novamente se o nosso componente de upload está funcionando e se seus arquivos foram salvos no S3:
 
@@ -306,7 +306,7 @@ Para obter mais detalhes e documentação atualizada, consulte os artigos abaixo
 
 [AWS S3 | Strapi Market](https://market.strapi.io/providers/@strapi-provider-upload-aws-s3)
 
-## **Fazendo o download dos nossos arquivos do S3**
+## Fazendo o download dos nossos arquivos do S3
 
 Após o upload bem-sucedido do arquivo para o S3, agora precisamos entender como podemos baixá-lo. Para isso, primeiro precisamos obter a URL do arquivo a partir da AWS.
 
@@ -460,18 +460,6 @@ export default UploadComponent
 ```
 
 ![Clicando e baixando o arquivo](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-17.png "Clicando e baixando o arquivo")
-
-## Deleting your files through Strapi API
-
-By default when you have a file related to an entry in Strapi, when you delete the entry these files are not deleted, like in WordPress.
-
-And the ideia here is to create a table (content-type), that you can attach files to each entry, and that files are uniquely associated to those entries, and if one of them is deleted, the associated files will also be deleted.
-
-To do this, we’ll need to customize Strapi to do this behavior for us, and to do this, we use the lifecycle hooks feature.
-
-The lifecycle hooks allow us to trigger functions when certain Strapi queries are executed. In this case, we can utilize the "beforeDelete" lifecycle hook to delete all media files associated with an entry before the entry itself is deleted.
-
-To implement this, we need to create a file named **lifecycles** inside the API folder of your project.
 
 ## **Excluindo seus arquivos por meio da API do Strapi**
 
