@@ -135,7 +135,17 @@ We’ve already learned how to send files to Strapi and save them locally, our n
 
 ### Setup Strapi
 
-To achieve this, let’s start creating/updating the plugins config file in our Strapi project:
+To achieve this, let’s start by installing the AWS S3 plugin:
+
+```bash
+# using yarn
+yarn add @strapi/provider-upload-aws-s3
+
+# using npm
+npm install @strapi/provider-upload-aws-s3 --save
+```
+
+And then create/update the plugins config file in our Strapi project:
 
 ```tsx
 // ./config/plugins.ts
