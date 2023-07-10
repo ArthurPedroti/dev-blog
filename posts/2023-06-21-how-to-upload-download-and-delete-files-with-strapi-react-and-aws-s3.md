@@ -290,6 +290,8 @@ Next, click on the user you just created and go to the "Security credentials" ta
 
 ![Select option "Third-party service" on creating access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Select option \"Third-party service\" on creating access key")
 
+
+
 ![Showing and saving the acess key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-14.png "Showing and saving the acess key")
 
 Now save your keys and place them in your Strapi env variables:
