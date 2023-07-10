@@ -502,51 +502,99 @@ export default {
       .query('api::test.test')
       .findOne({ ...ctx.params, populate: { files: true } })
 
-    const files = entry.files.map((file) => file)
-
-  // Delete the files from the upload plugin (including provider-specific logic)
-	if (entry.files) {
-    await Promise.all(
-      entry.files.map((file) =>
-        strapi.plugins['upload'].services.upload.remove(file)
-      )
-    )
+    // Delete the files from the upload plugin (including provider-specific logic)
+    if (entry.files) {
+      if (entry.files.length) {
+        await Promise.all(
+          entry.files.map((file) =>
+            strapi.plugins['upload'].services.upload.remove(file)
+          )
+        )
+      } else {
+        await strapi.plugins['upload'].services.upload.remove(entry.files)
+      }
+    }
   }
 }
 ```
 
-Para garantir que a lógica de exclusão de arquivos se aplique também às operações em massa, precisamos criar a mesma lógica para as operações de exclusão em massa, além das operações de exclusão individual, pois o Strapi fornece lifecycle hooks diferentes para cada caso:
+Lembrando que “files” é o nome do content-type, ou seja, precisa ser substituído pelo nome do seu campo, da mesma forma para o nome da content-type:
 
 ```tsx
 // ./src/api/test/content-types/test/lifecycles.ts
 
 export default {
   async beforeDelete(ctx) {
-    const entry = await strapi.db
-      .query('api::test.test')
-      .findOne({ ...ctx.params, populate: { files: true } })
+    const fieldName = 'anyNameOfField'
+    const contentTypeName = 'anyNameOfContentType'
 
-    if (entry.files) {
-      await Promise.all(
-        entry.files.map((file) =>
-          strapi.plugins['upload'].services.upload.remove(file)
+    const entry = await strapi.db
+      .query(`api::${contentTypeName}.${contentTypeName}`)
+      .findOne({ ...ctx.params, populate: { [fieldName]: true } })
+
+    if (entry[fieldName]) {
+      if (entry[fieldName].length) {
+        await Promise.all(
+          entry[fieldName].map((file) =>
+            strapi.plugins['upload'].services.upload.remove(file)
+          )
         )
-      )
+      } else {
+        await strapi.plugins['upload'].services.upload.remove(entry[fieldName])
+      }
+    }
+  }
+}
+```
+
+Para garantir que a lógica de exclusão de arquivo também se aplique a operações em massa, precisamos criar a mesma lógica para operações de exclusão em massa, além de operações de exclusão individuais, porque o Strapi fornece lifecycle hooks diferentes para cada caso:
+
+```tsx
+// ./src/api/test/content-types/test/lifecycles.ts
+
+export default {
+  async beforeDelete(ctx) {
+    const fieldName = 'anyNameOfField'
+    const contentTypeName = 'anyNameOfContentType'
+
+    const entry = await strapi.db
+      .query(`api::${contentTypeName}.${contentTypeName}`)
+      .findOne({ ...ctx.params, populate: { [fieldName]: true } })
+
+    if (entry[fieldName]) {
+      if (entry[fieldName].length) {
+        await Promise.all(
+          entry[fieldName].map((file) =>
+            strapi.plugins['upload'].services.upload.remove(file)
+          )
+        )
+      } else {
+        await strapi.plugins['upload'].services.upload.remove(entry[fieldName])
+      }
     }
   },
   async beforeDeleteMany(ctx) {
+    const fieldName = 'anyNameOfField'
+    const contentTypeName = 'anyNameOfContentType'
+
     const entries = await strapi.db
-      .query('api::test.test')
-      .findMany({ ...ctx.params, populate: { files: true } })
+      .query(`api::${contentTypeName}.${contentTypeName}`)
+      .findMany({ ...ctx.params, populate: { [fieldName]: true } })
 
     await Promise.all(
       entries.map(async (entry) => {
-        if (entry.files) {
-          await Promise.all(
-            entry.files.map(async (file) => {
-              await strapi.plugins['upload'].services.upload.remove(file)
-            })
-          )
+        if (entry[fieldName]) {
+          if (entry[fieldName].length) {
+            await Promise.all(
+              entry[fieldName].map((file) =>
+                strapi.plugins['upload'].services.upload.remove(file)
+              )
+            )
+          } else {
+            await strapi.plugins['upload'].services.upload.remove(
+              entry[fieldName]
+            )
+          }
         }
       })
     )
