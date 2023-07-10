@@ -286,9 +286,9 @@ Em seguida, clique no usuário que você acabou de criar e vá para a guia "Cred
 
 ![Clicando na aba de segurança nas configurações do usuário](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-11.png "Clicando na aba de segurança nas configurações do usuário")
 
-![Clicando no botão "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Clicando no botão \\"Create access key\\"")
+![Clicando no botão "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Clicando no botão \"Create access key\"")
 
-![Selecionando a opção "Third-party service" ao criar uma access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Selecionando a opção \\"Third-party service\\" ao criar uma access key")
+![Selecionando a opção "Third-party service" ao criar uma access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Selecionando a opção \"Third-party service\" ao criar uma access key")
 
 ![Mostrando e salvando a acess key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-14.png "Mostrando e salvando a acess key")
 
