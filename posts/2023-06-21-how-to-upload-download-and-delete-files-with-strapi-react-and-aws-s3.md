@@ -286,9 +286,11 @@ Next, click on the user you just created and go to the "Security credentials" ta
 
 ![Click on Security credentials on User Settings](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-11.png "Click on Security credentials on User Settings")
 
-![Click on button "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Click on button \\"Create access key\\"")
+![Click on button "Create access key"](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-12.png "Click on button \"Create access key\"")
 
-![Select option "Third-party service" on creating access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Select option \\"Third-party service\\" on creating access key")
+![Select option "Third-party service" on creating access key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-13.png "Select option \"Third-party service\" on creating access key")
+
+
 
 ![Showing and saving the acess key](assets/img/how-to-upload-download-and-delete-files-with-strapi-react-and-aws-s3-14.png "Showing and saving the acess key")
 
