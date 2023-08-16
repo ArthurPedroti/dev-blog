@@ -236,7 +236,7 @@ export default factories.createCoreController(
               if (item[attribute]) {
                 const originalItem = item[attribute]
                 item[attribute] = {
-									id: originalItem.id,
+				  id: originalItem.id,
                   username: originalItem.username,
                   email: originalItem.email
                 }
