@@ -1,5 +1,5 @@
 ---
-title: How to use relationships with User Table in Strapi (using REST API)
+title: How to customize the Strapi REST API to use Users Relationships
 description: Dealing with some Strapi limitations for user relationships
 date: 2023-08-16 03:06:31
 image: assets/img/how-to-use-relationships-with-user-table-in-strapi-using-rest-api-.png
@@ -29,6 +29,8 @@ Now let’s create a entry with Strapi's standard REST API, to see what happens 
 ![Order Content Type with a order without user](assets/img/how-to-use-relationships-with-user-table-in-strapi-with-rest-api-03.png "Order Content Type with a order without user")
 
 Note that the user field was not filled in, and it’s not because we made the wrong request, it’s because Strapi blocks it in its sanitization.
+
+The first and easiest way to solve this is to enable the **find** endpoint of the **User-permissions**, but you will expose the users of your API, the second and most difficult is to customize your controller, which we will see in more detail below.
 
 ## Customizing our REST API
 
