@@ -18,6 +18,11 @@ export default function HTML(props) {
             __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7fce39450b6e24cfe996509ec/252d12726dbcbb9997fa76542.js");`
           }}
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6711295796246628"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body {...props.bodyAttributes} className="dark">
         <script
