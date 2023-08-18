@@ -2,7 +2,7 @@
 title: How to customize the Strapi REST API to use Users Relationships
 description: Dealing with some Strapi limitations for user relationships
 date: 2023-08-16 03:06:31
-image: assets/img/how-to-use-relationships-with-user-table-in-strapi-using-rest-api-.png
+image: assets/img/how-to-customize-the-strapi-rest-api-to-use-users-relationships.png
 category: js
 background: "#D6BA32"
 ---
