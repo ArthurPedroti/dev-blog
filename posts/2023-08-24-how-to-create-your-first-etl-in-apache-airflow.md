@@ -30,7 +30,7 @@ source venv/bin/activate
 
 Your terminal will look like this:
 
-!["(venv)" label on terminal header](assets/img/how-to-create-your-first-etl-in-apache-airflow-01.png "\\"(venv)\\" label on terminal header")
+![venv label on terminal header](assets/img/how-to-create-your-first-etl-in-apache-airflow-01.png "venv label on terminal header")
 
 If you are using a different terminal, the virtual environment in Python might have other scripts such as **`activate.fish`** or **`activate.ps1`**, depending on your terminal type.
 
