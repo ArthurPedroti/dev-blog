@@ -10,7 +10,7 @@ background: "#7AAB13"
 
 We often shared folders and files in our company through a NAS or other files server and we need to access these files from diferent locations, on a desktop is very easy to mount and access these files, but on a server there may be a little more details that we will see on this article.
 
-## **Install cifs-utils**
+## Install cifs-utils
 
 Ensure that the **`cifs-utils`** package is installed on your Ubuntu server. You can install it using the following command:
 
@@ -19,7 +19,7 @@ sudo apt-get update
 sudo apt-get install cifs-utils
 ```
 
-## **Create a directory for mounting:**
+## Create a directory for mounting:
 
 Create a local directory on your server where you want to mount the NAS folder. For example:
 
@@ -35,7 +35,7 @@ You will need your user's UID (User ID) and GID (Group ID). You can get that by 
 id
 ```
 
-## **Mount the NAS folder:**
+## Mount the NAS folder:
 
 Use the **`mount`** command to mount the NAS folder. The syntax is as follows:
 
@@ -51,7 +51,7 @@ Example:
 sudo mount -t cifs //192.168.1.2/myshare /shared/nas_mount -o username=myuser,password=mypassword,uid=myuser,gid=mygroup
 ```
 
-## **Verify the mount:**
+## Verify the mount:
 
 Check the contents of the mounted folder to ensure that the NAS files are accessible on your server:
 
@@ -59,7 +59,7 @@ Check the contents of the mounted folder to ensure that the NAS files are access
 ls /mnt/nas_mount
 ```
 
-## **Automount on boot (optional):**
+## Automount on boot (optional):
 
 If you want the NAS folder has to be mounted automatically on system boot, you can add an entry to the **`/etc/fstab`** file. Open the file with a text editor:
 
