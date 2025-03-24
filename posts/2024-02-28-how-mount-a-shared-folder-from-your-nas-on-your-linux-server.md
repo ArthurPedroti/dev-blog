@@ -51,6 +51,8 @@ Example:
 sudo mount -t cifs //192.168.1.2/myshare /shared/nas_mount -o username=myuser,password=mypassword,uid=myuser,gid=mygroup
 ```
 
+Note: If your password contains special characters, you may need to escape them using a backslash (\).
+
 ## Verify the mount:
 
 Check the contents of the mounted folder to ensure that the NAS files are accessible on your server:
